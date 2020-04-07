@@ -19,19 +19,75 @@ header {
   #main-slider .item img {
     width: 100%; }
 
-#main-menu {
+.menu {
   position: absolute;
   width: 100%;
   top: 36px; }
-  #main-menu ul {
+  .menu .left-menu,
+  .menu .right-menu {
     float: left;
     outline: 1px solid #00ff00; }
-    #main-menu ul li {
+    .menu .left-menu > li,
+    .menu .right-menu > li {
       float: left;
       margin: 15px 0; }
-  #main-menu .left-menu {
+      .menu .left-menu > li > a,
+      .menu .right-menu > li > a {
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        display: block;
+        padding: 14px 18px; }
+        .menu .left-menu > li > a:hover,
+        .menu .right-menu > li > a:hover {
+          border-radius: 4px;
+          background-color: #343434;
+          color: #F56F03; }
+  .menu .left-menu {
     margin-left: 45px; }
-  #main-menu .logo {
+  .menu .toggle-submenu {
+    position: relative; }
+  .menu .submenu-1,
+  .menu .submenu-2 {
+    position: absolute;
+    top: 57px;
+    width: 243px;
+    padding-right: 11px;
+    border-radius: 4px;
+    background-color: #343434; }
+    .menu .submenu-1 > li:last-child a,
+    .menu .submenu-2 > li:last-child a {
+      padding-bottom: 20px; }
+    .menu .submenu-1 a,
+    .menu .submenu-2 a {
+      color: #BBBBBB;
+      text-decoration: none;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      padding: 24px 20px 0;
+      display: block; }
+      .menu .submenu-1 a:hover,
+      .menu .submenu-2 a:hover {
+        color: #Fff; }
+      .menu .submenu-1 a span,
+      .menu .submenu-2 a span {
+        padding-right: 8px;
+        color: #fff; }
+    .menu .submenu-1 .toggle-submenu > a,
+    .menu .submenu-2 .toggle-submenu > a {
+      background-image: url(../images/caret.png);
+      background-repeat: no-repeat;
+      background-position: right 26px; }
+    .menu .submenu-1 .caret,
+    .menu .submenu-2 .caret {
+      display: block;
+      float: right; }
+  .menu .submenu-2 {
+    left: 254px;
+    top: 0; }
+  .menu .logo {
     width: 168px;
     height: 70px;
     float: left;
@@ -40,24 +96,12 @@ header {
     color: #fff;
     margin: 0 15px;
     cursor: pointer; }
-    #main-menu .logo h1 {
+    .menu .logo h1 {
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 50px;
       margin: 0;
       text-transform: lowercase;
       line-height: 44px; }
-    #main-menu .logo h2 {
+    .menu .logo h2 {
       font-size: 11px;
       padding-top: 3px; }
-  #main-menu a {
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    display: block;
-    padding: 14px 18px; }
-    #main-menu a:hover {
-      border-radius: 4px;
-      background-color: #343434;
-      color: #F56F03; }

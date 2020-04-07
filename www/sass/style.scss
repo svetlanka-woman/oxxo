@@ -16,7 +16,7 @@ body {
 // ===================== HRADER =======================
 
 header {
-   
+
    margin: 0 auto;
    outline: 1px solid #37d947;
    border-top: 3px solid #FF7200;
@@ -25,26 +25,100 @@ header {
 
 #main-slider {
    position: relative;
+
    .item img {
       width: 100%;
    }
 }
 
-#main-menu {
+.menu {
    position: absolute;
    width: 100%;
    top: 36px;
-   ul {
+
+   .left-menu,
+   .right-menu {
       float: left;
       outline: 1px solid #00ff00;
-      li {
+
+      >li {
          float: left;
          margin: 15px 0;
+
+         >a {
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            display: block;
+            padding: 14px 18px;
+
+            &:hover {
+               border-radius: 4px;
+               background-color: #343434;
+               color: #F56F03;
+            }
+         }
       }
    }
+
    .left-menu {
       margin-left: 45px;
    }
+
+   .toggle-submenu {
+      position: relative;
+   }
+
+   .submenu-1,
+   .submenu-2 {
+      position: absolute;
+      top: 57px;
+      width: 243px;
+      padding-right: 11px;
+      border-radius: 4px;
+      background-color: #343434;
+
+      >li:last-child a {
+         padding-bottom: 20px;
+      }
+
+      a {
+         color: #BBBBBB;
+         text-decoration: none;
+         font-family: 'Open Sans', sans-serif;
+         font-size: 14px;
+         padding: 24px 20px 0;
+         display: block;
+
+         &:hover {
+            color: #Fff;
+         }
+
+         span {
+            padding-right: 8px;
+            color: #fff;
+         }
+      }
+
+      .toggle-submenu >a {
+         background-image: url(../images/caret.png);
+         background-repeat: no-repeat;
+         background-position: right 26px;
+      }
+
+      .caret {
+         display: block;
+         float: right;
+      }
+   }
+
+   .submenu-2 {
+      left: 254px;                                                         
+      top: 0;
+   }
+
    .logo {
       width: 168px;
       height: 70px;
@@ -54,6 +128,7 @@ header {
       color: #fff;
       margin: 0 15px;
       cursor: pointer;
+
       h1 {
          font-family: 'Source Sans Pro', sans-serif;
          font-size: 50px;
@@ -61,24 +136,11 @@ header {
          text-transform: lowercase;
          line-height: 44px;
       }
+
       h2 {
          font-size: 11px;
          padding-top: 3px;
       }
    }
-   a {
-      color: #fff;
-      text-decoration: none;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 14px;
-      font-weight: bold;
-      display: block;
-      padding: 14px 18px;
-      &:hover {
-         border-radius: 4px;
-         background-color: #343434;
-         color: #F56F03;
-      }
-      
-   }
+
 }

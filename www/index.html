@@ -20,7 +20,7 @@
       
       <section id="main-slider">
 
-        <nav id="main-menu">
+        <nav id="main-menu" class="menu">
           <div class="container">
             <ul class="left-menu">
               <li><a href="#">ABOUT US</a></li>
@@ -33,7 +33,26 @@
               <h2>RESPONSIVE THEME</h2>
             </div>
             <ul class="right-menu">
-              <li><a href="#">SERVICES</a></li>
+              <li class="toggle-submenu">
+                <a href="#">SERVICES</a>
+                <ul class="submenu-1">
+                  <li><a href="#"><span>• </span>SUBMENU TITLE 1</a></li>
+                  <li><a href="#"><span>• </span>SOME TITLE HERE</a></li>
+                  <li><a href="#"><span>• </span>ABOUT OUR COMPANY</a></li>
+                  <li><a href="#"><span>• </span>LOREM IPSUM TITLE</a></li>
+                  <li class="toggle-submenu">
+                    <a href="#"><span>• </span>JUST IPSUM TITLE</span></a>
+                    <ul class="submenu-2">
+                      <li><a href="#"><span>• </span>SUBMENU TITLE 2</a></li>
+                      <li><a href="#"><span>• </span>SOME TITLE HERE</a></li>
+                      <li><a href="#"><span>• </span>ABOUT OUR COMPANY</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#"><span>• </span>DOLOR SIT AMET TITLE</a></li>
+                  <li><a href="#"><span>• </span>SIT TITLE WITH AMET</a></li>
+                  <li><a href="#"><span>• </span>IPSUM WITH LOREM</a></li>
+                </ul>
+              </li>
               <li><a href="#">CLIENTS</a></li>
               <li><a href="#">HOW WE DO?</a></li>
               <li><a href="#">CONTACT US</a></li>
@@ -58,5 +77,8 @@
         
       </section><!--/#main-slider-->
     </header>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/scripts.js"></script>
   </body>
 </html>
