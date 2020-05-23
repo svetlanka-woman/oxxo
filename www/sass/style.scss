@@ -1,6 +1,12 @@
+$font-family-Open: "Open Sans", "sans-serif";
+$font-family-Source: "Source Sans Pro", "sans-serif";
+$color-grey: #666666;
+$color-orange: #ff7200;
+$color-white: #fff;
+
 body {
-   background-color: #fff;
-   font-family: 'Open Sans', sans-serif;
+   background-color: $color-white;
+   font-family: $font-family-Open;
 }
 
 .container {
@@ -10,26 +16,98 @@ body {
    outline: 1px solid #ff0000;
 }
 
-//font-family: 'Open Sans', sans-serif;
+.clear {
+   clear: both;
+}
+
+// font-family: 'Open Sans', sans-serif;
 // font-family: 'Source Sans Pro', sans-serif;
 
 // ===================== HRADER =======================
 
 header {
-
    margin: 0 auto;
-   outline: 1px solid #37d947;
-   border-top: 3px solid #FF7200;
-   border-bottom: 3px solid #FF7200;
 }
 
 #main-slider {
    position: relative;
-
-   .item img {
-      width: 100%;
+   border-top: 3px solid $color-orange;
+   border-bottom: 3px solid $color-orange;
+   .item {
+      // margin-bottom: -2px;
+      img {
+         width: 100%;
+         display: none;
+         &.active-slide {
+            display: block;
+         }
+      }
    }
-}
+   
+
+   .left-control-slider, .right-control-slider {
+      position: absolute;
+      top: 375px;
+      width: 44px;
+      height: 109px;
+      background-repeat: no-repeat;
+      transition: background-image 0.7s;
+   }
+   .right-control-slider {
+      right: 20px;
+      background-image: url(../images/right-control.png);
+      &:hover {
+         background-image: url(../images/right-control-hover.png);
+      }
+   }
+   .left-control-slider {
+      left: 20px;
+      background-image: url(../images/left-control.png);
+      &:hover {
+         background-image: url(../images/left-control-hover.png);
+      }
+   }
+
+   .slider-caption {
+      position: absolute;
+      top: 367px;
+      width: 100%;
+      text-align: center;
+      h2 {
+         font-size: 72px;
+         font-family: $font-family-Open;
+         color: $color-white;
+         margin-bottom: 24px;
+      }
+      ul {
+         margin: 24px 0 58px;
+      }
+      li {
+         display: inline-block;
+         color: $color-white;
+         font-family: $font-family-Open;
+         font-weight: 600;
+         font-size: 20px;
+      }
+      #btn-more {
+         font-size: 14px;
+         font-family: $font-family-Open;
+         color: $color-white;
+         text-decoration: none;
+         border: 1px solid $color-white;
+         padding: 23px 36px;
+         &:hover {
+            background-color: #000000;
+            opacity: 0.5;
+            color: $color-orange;
+            
+         } 
+      }
+      .active-slide {
+         color: $color-orange;
+      }
+   }
+} //#main-slider
 
 .menu {
    position: absolute;
@@ -43,12 +121,12 @@ header {
 
       >li {
          float: left;
-         margin: 15px 0;
+         padding: 15px 0;
 
          >a {
-            color: #fff;
+            color: $color-white;
             text-decoration: none;
-            font-family: 'Open Sans', sans-serif;
+            font-family: $font-family-Open;
             font-size: 14px;
             font-weight: bold;
             display: block;
@@ -74,11 +152,11 @@ header {
    .submenu-1,
    .submenu-2 {
       position: absolute;
-      top: 57px;
-      width: 243px;
-      padding-right: 11px;
+      top: 72px;
+      width: 254px;
       border-radius: 4px;
       background-color: #343434;
+      display: none;
 
       >li:last-child a {
          padding-bottom: 20px;
@@ -87,30 +165,25 @@ header {
       a {
          color: #BBBBBB;
          text-decoration: none;
-         font-family: 'Open Sans', sans-serif;
+         font-family: $font-family-Open;
          font-size: 14px;
          padding: 24px 20px 0;
          display: block;
 
          &:hover {
-            color: #Fff;
+            color: $color-white;
          }
 
          span {
             padding-right: 8px;
-            color: #fff;
+            color: $color-white;
          }
       }
 
       .toggle-submenu >a {
          background-image: url(../images/caret.png);
          background-repeat: no-repeat;
-         background-position: right 26px;
-      }
-
-      .caret {
-         display: block;
-         float: right;
+         background-position: 236px 26px;
       }
    }
 
@@ -123,14 +196,14 @@ header {
       width: 168px;
       height: 70px;
       float: left;
-      border: 1px solid #fff;
+      border: 1px solid $color-white;
       text-align: center;
-      color: #fff;
+      color: $color-white;
       margin: 0 15px;
       cursor: pointer;
 
       h1 {
-         font-family: 'Source Sans Pro', sans-serif;
+         font-family: $font-family-Source;
          font-size: 50px;
          margin: 0;
          text-transform: lowercase;
@@ -142,5 +215,4 @@ header {
          padding-top: 3px;
       }
    }
-
-}
+} //.menu
