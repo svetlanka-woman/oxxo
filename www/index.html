@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/dc47546bfb.js" crossorigin="anonymous"></script>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -22,6 +23,8 @@
 
         <nav id="main-menu" class="menu">
           <div class="container">
+            <button class="bar-toggle" type="button"><i class="fas fa-bars"></i></button>
+            <button class="btn-close" type="button"><i class="fas fa-times"></i></button>
             <ul class="left-menu">
               <li><a href="#">ABOUT US</a></li>
               <li><a href="#">WHO WE ARE?</a></li>
@@ -57,20 +60,21 @@
               <li><a href="#">HOW WE DO?</a></li>
               <li><a href="#">CONTACT US</a></li>
             </ul>
+            
           </div>
         </nav><!--/#main-menu-->
 
         <div class="item">
-          <img id="first" class="active-slide" src="images/main-slide1.jpg" alt="Slide-1">
-          <img src="images/main-slide2.jpg" alt="Slide-2">
+          <img src="images/main-slide1.jpg" alt="Slide-1">
+          <img class="active-slide" src="images/main-slide2.jpg" alt="Slide-2">
           <img src="images/main-slide3.jpg" alt="Slide-3">
-          <img  src="images/main-slide4.jpg" alt="Slide-4">
+          <img src="images/main-slide4.jpg" alt="Slide-4">
           <div class="slider-caption">
             <div class="container">
               <h2>WE ARE. OXXO.</h2>
               <ul>
-                <li id="first" class="active-slide">WEB DESIGN</li>
-                <li><span>• </span>SOCIAL MEDIA</li>
+                <li id="first">WEB DESIGN</li>
+                <li class="active-slide"><span>• </span>SOCIAL MEDIA</li>
                 <li><span>• </span>GRAPHICS</li>
                 <li id="last"><span>• </span>START-UP</li>
               </ul>
