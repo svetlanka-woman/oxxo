@@ -28,9 +28,6 @@ body {
   content: " ";
   clear: both; }
 
-header {
-  margin: 0 auto; }
-
 #main-slider {
   position: relative;
   border-top: 3px solid #ff7200;
@@ -178,6 +175,31 @@ header {
       font-size: 11px;
       padding-top: 3px; }
 
+#second-menu {
+  position: relative;
+  top: 15px; }
+  #second-menu .left-menu > li > a,
+  #second-menu .right-menu > li > a {
+    color: #343434; }
+    #second-menu .left-menu > li > a:hover,
+    #second-menu .right-menu > li > a:hover {
+      color: #F56F03; }
+  #second-menu .logo {
+    width: 132px;
+    height: 54px;
+    border: 1px solid #343434;
+    color: #343434;
+    margin: 5px 33px; }
+    #second-menu .logo h1 {
+      font-size: 39px;
+      margin: 0;
+      line-height: 32px; }
+    #second-menu .logo h2 {
+      font-size: 9px;
+      font-weight: bold;
+      letter-spacing: -0.5px;
+      padding-top: 2px; }
+
 @media (max-width: 1320px) {
   .menu .left-menu > li > a,
   .menu .right-menu > li > a {
@@ -227,6 +249,9 @@ header {
     .menu .submenu-1 .toggle-submenu > a, .menu .submenu-2 .toggle-submenu > a {
       background-position: 192px 20px; }
 
+  #second-menu .logo {
+    margin: 0px 21px; }
+
   #main-slider .slider-caption {
     top: 262px; }
     #main-slider .slider-caption h2 {
@@ -271,6 +296,12 @@ header {
       padding: 18px 11px 0; }
     .menu .submenu-1 .toggle-submenu > a, .menu .submenu-2 .toggle-submenu > a {
       background-position: 165px 18px; }
+
+  #second-menu {
+    top: 5px; }
+    #second-menu .logo {
+      width: 119px;
+      margin: 0px 15px; }
 
   #main-slider .slider-caption {
     top: 228px; }
@@ -369,6 +400,21 @@ header {
         font-size: 46px;
         line-height: 30px; }
 
+  #second-menu {
+    top: 0;
+    background-color: #fff; }
+    #second-menu .left-menu,
+    #second-menu .right-menu {
+      background-color: #BBBBBB;
+      z-index: 99; }
+    #second-menu .bar-toggle {
+      color: #343434; }
+    #second-menu .btn-close {
+      color: #343434; }
+    #second-menu .logo {
+      height: 48px;
+      margin: 0px 10px; }
+
   #main-slider .slider-caption {
     top: 166px; }
     #main-slider .slider-caption h2 {
@@ -403,6 +449,12 @@ header {
     .menu .logo h1 {
       font-size: 40px;
       line-height: 25px; }
+
+  #second-menu .logo {
+    height: 44px;
+    margin: 0px 10px; }
+    #second-menu .logo h1 {
+      line-height: 26px; }
 
   #main-slider .slider-caption {
     top: 96px; }

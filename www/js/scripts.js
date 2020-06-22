@@ -39,13 +39,13 @@ $(function() {
    //Toggle maim menu for screen < 769px
 
    $('.menu .bar-toggle').on('click', function () {
-      $('.menu .right-menu').css('top',$('.menu .left-menu').innerHeight());
-      $('.menu .btn-close').animate({'left':'218px'},500);
-      $('.menu .left-menu, .menu .right-menu').animate({'left':'0px'},500);
+      $(this).siblings('.right-menu').css('top',$('.menu .left-menu').innerHeight());
+      $(this).siblings('.btn-close').animate({'left':'218px'},500);
+      $(this).siblings('.left-menu, .right-menu').animate({'left':'0px'},500);
    });
 
    $('.menu .btn-close').on('click', function () {
-      $('.menu .left-menu, .menu .right-menu').animate({'left':'-250px'},500);
+      $(this).siblings('.left-menu, .right-menu').animate({'left':'-250px'},500);
       $(this).animate({'left':'-32px'},500);
    });
 
@@ -71,6 +71,10 @@ $(function() {
          $('.right-control-slider').fadeIn(300);
       }
    });
+
+   //second menu
+
+
 
 
 });
