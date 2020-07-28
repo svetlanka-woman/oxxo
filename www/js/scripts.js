@@ -51,30 +51,46 @@ $(function() {
 
    //main slider
 
-   $('.right-control-slider').on('click', function () {
+   $('#main-slider .right-control-slider').on('click', function () {
       $('.item li.active-slide').toggleClass('active-slide').next().toggleClass('active-slide');
       $('.item img.active-slide').toggleClass('active-slide').next().toggleClass('active-slide');
-      if ($('.item li.active-slide').attr('id') == "last") {
+      if ($('.item li:last').attr('class')=='active-slide') {
          $(this).fadeOut(1);
       }
-      if ($('.item li.active-slide').attr('id') != "first") {
-         $('.left-control-slider').fadeIn(300);
+      if ($('.item li:first').attr('class')!='active-slide') {
+         $('#main-slider .left-control-slider').fadeIn(300);
       }
    });
-   $('.left-control-slider').on('click', function () {
+   $('#main-slider .left-control-slider').on('click', function () {
       $('.item li.active-slide').toggleClass('active-slide').prev().toggleClass('active-slide');
       $('.item img.active-slide').toggleClass('active-slide').prev().toggleClass('active-slide');
-      if ($('.item li.active-slide').attr('id') == "first") {
+      if ($('.item li:first').attr('class')=='active-slide') {
          $(this).fadeOut(1);
       }
-      if ($('.item li.active-slide').attr('id') != "last") {
-         $('.right-control-slider').fadeIn(300);
+      if ($('.item li:last').attr('class')!='active-slide') {
+         $('#main-slider .right-control-slider').fadeIn(300);
       }
    });
 
-   //second menu
+// slider-about
 
-
-
+$('#slider-about .right-control-slider').on('click', function () {
+   $('#slider-about img.active-slide').toggleClass('active-slide').next().toggleClass('active-slide');
+   if ($('#slider-about img:last').attr('class')=='active-slide') {
+      $(this).fadeOut(1);
+   }
+   if ($('#slider-about img:first').attr('class')!='active-slide') {
+      $('#slider-about .left-control-slider').fadeIn(300);
+   }
+});
+$('#slider-about .left-control-slider').on('click', function () {
+   $('#slider-about img.active-slide').toggleClass('active-slide').prev().toggleClass('active-slide');
+   if ($('#slider-about img:first').attr('class')=='active-slide') {
+      $(this).fadeOut(1);
+   }
+   if ($('#slider-about img:last').attr('class')!='active-slide') {
+      $('#slider-about .right-control-slider').fadeIn(300);
+   }
+});
 
 });
