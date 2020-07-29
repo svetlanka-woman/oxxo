@@ -1,5 +1,7 @@
-$font-family-Open: "Open Sans", "sans-serif";
-$font-family-Source: "Source Sans Pro", "sans-serif";
+$font-family-Open: "Open Sans",
+"sans-serif";
+$font-family-Source: "Source Sans Pro",
+"sans-serif";
 $color-grey: #666666;
 $color-dark-grey: #343434;
 $color-orange: #ff7200;
@@ -66,23 +68,28 @@ header {
    background-repeat: repeat-x;
    background-position: 0 bottom;
 }
+
 //-------------Main slider--------------
 
 #main-slider {
    position: relative;
    border-top: 3px solid $color-orange;
    border-bottom: 3px solid $color-orange;
+
    .item {
       >img {
          width: 100%;
          display: none;
+
          &.active-slide {
             display: block;
             max-height: 900px;
          }
       }
    }
-   .left-control-slider, .right-control-slider {
+
+   .left-control-slider,
+   .right-control-slider {
       position: absolute;
       top: 375px;
       width: 44px;
@@ -90,33 +97,41 @@ header {
       background-repeat: no-repeat;
       transition: background-image 0.7s;
    }
+
    .right-control-slider {
       right: 20px;
       background-image: url(../images/right-control.png);
+
       &:hover {
          background-image: url(../images/right-control-hover.png);
       }
    }
+
    .left-control-slider {
       left: 20px;
       background-image: url(../images/left-control.png);
+
       &:hover {
          background-image: url(../images/left-control-hover.png);
       }
    }
+
    .slider-caption {
       position: absolute;
       top: 367px;
       width: 100%;
       text-align: center;
+
       h2 {
          font-size: 72px;
          font-family: $font-family-Open;
          color: $color-white;
       }
+
       ul {
          margin: 24px 0 58px;
       }
+
       li {
          display: inline-block;
          color: $color-white;
@@ -124,6 +139,7 @@ header {
          font-weight: 600;
          font-size: 20px;
       }
+
       #btn-more {
          font-size: 14px;
          font-family: $font-family-Open;
@@ -131,18 +147,22 @@ header {
          text-decoration: none;
          border: 1px solid $color-white;
          padding: 23px 36px;
+
          &:hover {
 
-            background-color: rgba(0,0,0,0.3);
+            background-color: rgba(0, 0, 0, 0.3);
             // opacity: 0.5;
             color: $color-orange;
-         } 
+         }
       }
+
       .active-slide {
          color: $color-orange;
       }
    }
-} //#main-slider
+}
+
+//#main-slider
 
 //-------------- Menu -------------
 .menu {
@@ -225,7 +245,7 @@ header {
          }
       }
 
-      .toggle-submenu >a {
+      .toggle-submenu>a {
          background-image: url(../images/caret.png);
          background-repeat: no-repeat;
          background-position: 236px 26px;
@@ -233,7 +253,7 @@ header {
    }
 
    .submenu-2 {
-      left: 254px;                                                         
+      left: 254px;
       top: 0;
    }
 
@@ -260,31 +280,38 @@ header {
          padding-top: 3px;
       }
    }
-} //.menu
+}
+
+//.menu
 
 //----------Second menu----------
 
 #second-menu {
    position: relative;
    top: 15px;
+
    .left-menu>li>a,
    .right-menu>li>a {
       color: $color-dark-grey;
+
       &:hover {
          color: #F56F03;
       }
    }
+
    .logo {
       width: 132px;
       height: 54px;
       border: 1px solid $color-dark-grey;
       color: $color-dark-grey;
       margin: 5px 33px;
+
       h1 {
          font-size: 39px;
          margin: 0;
          line-height: 32px;
       }
+
       h2 {
          font-size: 9px;
          font-weight: bold;
@@ -292,11 +319,14 @@ header {
          padding-top: 2px;
       }
    }
-} //#second-menu
+}
+
+//#second-menu
 
 //-------@media for HEADER---------
 @media (max-width: 1320px) {
    .menu {
+
       .left-menu,
       .right-menu {
          >li {
@@ -305,25 +335,32 @@ header {
             }
          }
       }
+
       .submenu-2 {
          left: 230px;
       }
+
       .submenu-1,
       .submenu-2 {
          width: 230px;
+
          a {
             padding: 18px 16px 0;
          }
-         .toggle-submenu > a {
+
+         .toggle-submenu>a {
             background-position: 212px 20px;
          }
       }
    }
+
    #main-slider {
       .slider-caption {
          top: 320px;
       }
-      .left-control-slider, .right-control-slider {
+
+      .left-control-slider,
+      .right-control-slider {
          top: 330px;
       }
    }
@@ -332,45 +369,55 @@ header {
 @media (max-width: 1200px) {
    .menu {
       top: 20px;
+
       .left-menu,
       .right-menu {
          >li {
             padding: 10px 0;
+
             >a {
                padding: 14px 11px;
                font-size: 13px;
             }
          }
       }
+
       .left-menu {
          margin-left: 5px;
       }
+
       .logo {
          width: 150px;
          height: 58px;
          margin: 0px 12px;
+
          h1 {
             line-height: 36px;
          }
       }
+
       .submenu-1 {
          top: 62px;
          width: 208px;
       }
+
       .submenu-2 {
          left: 208px;
          width: 190px;
       }
-      .submenu-1, .submenu-2 {
+
+      .submenu-1,
+      .submenu-2 {
          a {
             font-size: 13px;
          }
-         .toggle-submenu >a {
+
+         .toggle-submenu>a {
             background-position: 192px 20px;
          }
       }
    }
-   
+
    #second-menu {
       .logo {
          margin: 0px 21px;
@@ -380,18 +427,23 @@ header {
    #main-slider {
       .slider-caption {
          top: 262px;
+
          h2 {
             font-size: 64px;
          }
+
          ul {
             margin: 16px 0 54px;
          }
+
          #btn-more {
             font-size: 13px;
             padding: 16px 25px;
          }
       }
-      .left-control-slider, .right-control-slider {
+
+      .left-control-slider,
+      .right-control-slider {
          top: 285px;
          width: 33px;
          height: 84px;
@@ -401,138 +453,79 @@ header {
 }
 
 @media (max-width: 992px) {
-   .menu {
-      .container {
-         padding: 0;
-         max-width: 744px;
-      }
-      top: 10px;
-      .left-menu,
-      .right-menu {
-         >li {
-            >a {
-               padding: 14px 6px;
-               font-size: 11px;
-            }
-         }
-      }
-      .left-menu {
-         margin-left: 3px;
-      }
-      .logo {
-         width: 130px;
-         margin: 0px 10px;
-      }
-      .submenu-1 {
-         top: 55px;
-         width: 182px;
-      }
-      .submenu-2 {
-         left: -160px;
-         width: 160px;
-      }
-      .submenu-1, .submenu-2 {
-         a {
-            font-size: 11px;
-            padding: 18px 11px 0;
-         }
-         .toggle-submenu >a {
-            background-position: 165px 18px;
-         }
-      }
+   header {
+      padding-bottom: 0px;
    }
-   #second-menu {
-      display: none;
-   }
-   #main-slider {
-      .slider-caption {
-         top: 228px;
-         h2 {
-            font-size: 55px;
-         }
-         ul {
-            margin: 13px 0 45px;
-         }
-         li {
-            font-size: 17px;
-         }
-         #btn-more {
-            font-size: 12px;
-            padding: 12px 19px;
-         }
-      }
-      .left-control-slider, .right-control-slider {
-         top: 228px;
-         width: 33px;
-         height: 84px;
-      }
-      .right-control-slider {
-         right: 10px;
-      }
-      .left-control-slider {
-         left: 10px;
-      }   
-   }
-}
 
-@media (max-width: 768px) {
    .menu {
       top: 0;
       background-color: $color-grey;
+
       .container {
          min-width: 0;
       }
+
       .left-menu,
       .right-menu {
          position: absolute;
          top: 0;
          width: 250px;
          left: -250px;
-      background-color: $color-grey;
-      z-index: 100;
+         background-color: $color-grey;
+         z-index: 100;
          float: none;
-         // display: none;
+
          >li {
             float: none;
             padding: 0;
+
             >a {
-                  font-size: 13px;
+               font-size: 13px;
                padding: 16px 14px;
             }
          }
+
          .toggle-submenu>a {
             background-image: url(../images/caret.png);
             background-repeat: no-repeat;
             background-position: 225px 18px;
          }
       }
+
       .left-menu {
          margin-left: 0px;
       }
+
       .submenu-1,
       .submenu-2 {
          position: static;
          width: 100%;
-         border-radius: 0;   
+         border-radius: 0;
+
          a {
             font-size: 13px;
             padding: 18px 10px 0 14px;
+
             span {
                padding-right: 8px;
             }
          }
-         .toggle-submenu > a {
+
+         .toggle-submenu>a {
             background-position: 225px 18px;
          }
       }
+
       .submenu-2 {
-         > li:last-child a {
+         >li:last-child a {
             padding-bottom: 0px;
          }
+
          a {
             padding: 18px 10px 0 30px;
          }
       }
+
       .btn-close {
          display: block;
          position: absolute;
@@ -545,6 +538,7 @@ header {
          color: $color-white;
          font-size: 24px;
       }
+
       .bar-toggle {
          display: block;
          float: left;
@@ -555,11 +549,13 @@ header {
          padding: 9px;
          cursor: pointer;
       }
+
       .logo {
          float: right;
          margin-right: 10px;
          height: 50px;
          width: 120px;
+
          h1 {
             font-size: 46px;
             line-height: 30px;
@@ -567,34 +563,86 @@ header {
       }
    }
 
+   #second-menu {
+      display: none;
+   }
+
+   #main-slider {
+      .slider-caption {
+         top: 228px;
+
+         h2 {
+            font-size: 55px;
+         }
+
+         ul {
+            margin: 13px 0 45px;
+         }
+
+         li {
+            font-size: 17px;
+         }
+
+         #btn-more {
+            font-size: 12px;
+            padding: 12px 19px;
+         }
+      }
+
+      .left-control-slider,
+      .right-control-slider {
+         top: 228px;
+         width: 33px;
+         height: 84px;
+      }
+
+      .right-control-slider {
+         right: 10px;
+      }
+
+      .left-control-slider {
+         left: 10px;
+      }
+   }
+}
+
+@media (max-width: 768px) {
    #main-slider {
       .slider-caption {
          top: 166px;
+
          h2 {
             font-size: 53px;
          }
+
          ul {
             margin: 10px 0 24px;
          }
+
          li {
             font-size: 15px;
          }
+
          #btn-more {
             font-size: 12px;
             padding: 8px 10px;
          }
       }
-      .left-control-slider, .right-control-slider {
+
+      .left-control-slider,
+      .right-control-slider {
          top: 180px;
          width: 20px;
          height: 52px;
       }
+
       .right-control-slider {
          right: 5px;
       }
+
       .left-control-slider {
          left: 5px;
-      }      
+      }
    }
 }
 
@@ -604,40 +652,50 @@ header {
          font-size: 28px;
          padding: 7px;
       }
+
       .logo {
          height: 44px;
+
          h1 {
-         font-size: 40px;
-         line-height: 25px;
+            font-size: 40px;
+            line-height: 25px;
          }
       }
    }
-   
+
    #main-slider {
       .slider-caption {
          top: 96px;
+
          h2 {
             font-size: 38px;
          }
+
          ul {
             margin: 2px 0 15px;
          }
+
          li {
             font-size: 12px;
          }
+
          #btn-more {
             font-size: 12px;
             padding: 4px 7px;
          }
       }
-      .left-control-slider, .right-control-slider {
+
+      .left-control-slider,
+      .right-control-slider {
          top: 100px;
          width: 20px;
          height: 52px;
       }
-      
+
    }
-} //@media for HEADER  
+}
+
+//@media for HEADER  
 
 //========================== MAIN =============================
 
@@ -651,6 +709,7 @@ main {
       background-position: center bottom;
       padding-bottom: 17px;
    }
+
    .under-h3 {
       font-size: 14px;
       font-weight: 300;
@@ -659,6 +718,7 @@ main {
       margin: 0 auto;
       line-height: 20px;
    }
+
    h4 {
       font-weight: 600;
       font-size: 20px;
@@ -669,27 +729,33 @@ main {
 
 #about-us {
    color: $color-grey;
+
    h3 {
       margin: 112px 0 19px;
    }
+
    section {
-      width: 48%;
       float: left;
-      margin: 76px 0 124px;
    }
 }
 
 #about-caption {
+   width: 48%;
+   margin: 76px 0 124px;
+
    p {
       font-size: 14px;
       font-weight: 300;
       margin-bottom: 22px;
       line-height: 22px;
    }
+
    h4 {
       margin-bottom: 22px;
    }
-   .btn-meet, .btn-contact {
+
+   .btn-meet,
+   .btn-contact {
       width: 156px;
       height: 46px;
       border: 1px solid $color-orange;
@@ -699,24 +765,28 @@ main {
       text-align: center;
       line-height: 46px;
    }
+
    .btn-meet {
       background-color: $color-orange;
       color: $color-white;
       margin-right: 30px;
    }
+
    .btn-contact {
       color: $color-orange;
    }
 }
 
 #slider-about {
+   width: 48%;
    position: relative;
-   margin-right: 30px !important; 
+   margin: 76px 30px 124px 0;
    background-image: url(../images/shadow-slider.png);
    background-repeat: no-repeat;
    background-size: contain;
    padding-bottom: 18px;
    background-position: 0 bottom;
+
    img {
       width: 100%;
       display: none;
@@ -724,14 +794,18 @@ main {
          display: block;
       }
    }
-   .left-control-slider, .right-control-slider {
+
+   .left-control-slider,
+   .right-control-slider {
       position: absolute;
       top: 148px;
       width: 48px;
       height: 48px;
       background-repeat: no-repeat;
       transition: background-image 0.7s;
+      background-size: contain;
    }
+
    .right-control-slider {
       right: 20px;
       background-image: url(../images/right-control-about.png);
@@ -739,6 +813,7 @@ main {
          background-image: url(../images/right-control-hover-about.jpg);
       }
    }
+
    .left-control-slider {
       left: 20px;
       background-image: url(../images/left-control-about.png);
@@ -748,5 +823,193 @@ main {
    }
 }
 
+//-------@media for About as---------
+@media (max-width: 1320px) {
+   #about-caption {
+      width: 49%;
+      margin: 70px 0 110px;
+      p {
+         margin-bottom: 18px;
+         line-height: 20px;
+      }
+      h4 {
+         margin-bottom: 20px;
+      }
+   }
+
+   #slider-about {
+      padding-bottom: 17px;
+      margin: 70px 30px 110px 0;
+      .left-control-slider,
+      .right-control-slider {
+         top: 135px;
+      }
+   }
+
+   #about-us {
+      h3 {
+         margin: 100px 0 16px;
+      }
+   }
+}
+
+@media (max-width: 1200px) {
+   #about-caption {
+      width: 51%;
+      margin: 60px 0 80px;
+      p {
+         line-height: 18px;
+      }
+      h4 {
+         margin-bottom: 18px;
+      }
+   }
+
+   #slider-about {
+      width: 46%;
+      margin: 60px 20px 80px 0;
+      padding-bottom: 14px;
+      .left-control-slider,
+      .right-control-slider {
+         top: 106px;
+         width: 44px;
+         height: 44px;
+      }
+   }
+
+   #about-us {
+      h3 {
+         margin: 90px 0 14px;
+         padding-bottom: 14px;
+      }
+      .under-h3 {
+         width: 60%;
+      }
+   }
+}
+
+@media (max-width: 992px) {
+   #slider-about {
+      width: 70%;
+      margin: 30px auto;
+      padding-bottom: 16px;
+      .left-control-slider,
+      .right-control-slider {
+         top: 129px;
+         width: 48px;
+         height: 48px;
+      }
+   }
+
+   #about-us {
+      section {
+         float: none;
+      }
+      .under-h3 {
+         width: 80%;
+      }
+      h3 {
+         margin: 70px 0 14px;
+      }
+   }
+
+   #about-caption {
+      width: 100%;
+      margin: 15px 10px 80px;
+   }
+}
+
+@media (max-width: 768px) {
+   main {
+      h3 {
+         font-size: 34px;
+         line-height: 18px;
+      }
+      .under-h3 {
+         line-height: 18px;
+      }
+   }
+
+   #about-us {
+      h3 {
+         margin: 50px 0 14px;
+      }
+      .under-h3 {
+         width: 90%;
+      }
+   }
+
+   #slider-about {
+      width: 454px;
+      padding-bottom: 14px;
+
+      .right-control-slider,
+      .left-control-slider {
+         top: 117px;
+         width: 44px;
+         height: 44px;
+      }
+   }
+
+   #about-caption {
+      .btn-meet, .btn-contact {
+         width: 46%;
+      }
+      .btn-meet {
+         margin-right: 20px;
+      }
+   }
+}
+
+@media (max-width: 500px) {
+   #slider-about {
+      width: 354px;
+      padding-bottom: 11px;
+      margin: 20px auto;
+
+      .right-control-slider,
+      .left-control-slider {
+         top: 86px;
+         width: 40px;
+         height: 40px;
+      }
+   }
+
+   #about-us {
+      .under-h3 {
+         width: 100%;
+      }
+   }
+
+   #about-caption {
+      .btn-meet, .btn-contact {
+         width: 96%;
+         margin-bottom: 10px;
+      }
+   }
+}
+//@media for About as  
 
 
+
+/*
+-------@media for ---------
+@media (max-width: 1320px) {
+   
+}
+
+@media (max-width: 1200px) {
+   
+}
+
+@media (max-width: 992px) {
+   
+}
+
+@media (max-width: 768px) {
+   
+}
+
+@media (max-width: 500px) {
+   
+} //@media for*/

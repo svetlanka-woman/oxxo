@@ -1,7 +1,7 @@
 $(function() {
 
    $('.menu li:not(li.toggle-submenu)').on('click',function () {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 992) {
          $('.submenu-1, .submenu-2').hide(1);
       } else {
          $('.menu .left-menu, .menu .right-menu').animate({'left':'-250px'},500);
@@ -13,30 +13,30 @@ $(function() {
 
    $('.toggle-submenu')
       .on('mouseover', function () {
-         if (window.innerWidth > 768) {
+         if (window.innerWidth > 992) {
             $(this).children('ul').show(200);
          }
       })
       .on('mouseleave', function () {
-         if (window.innerWidth > 768) {
+         if (window.innerWidth > 992) {
             $(this).children('ul').hide(100);
          }
       });
 
    $('.right-menu > li.toggle-submenu > a')
       .on('click', function () {
-         if (window.innerWidth < 769) {
+         if (window.innerWidth < 993) {
             $(this).next().slideToggle(500);
          }
       });
       $('.submenu-1 > li.toggle-submenu > a')
       .on('click', function () {
-         if (window.innerWidth < 769) {
+         if (window.innerWidth < 993) {
             $(this).next().slideToggle(500);
          }
       });
    
-   //Toggle maim menu for screen < 769px
+   //Toggle maim menu for screen < 993px
 
    $('.menu .bar-toggle').on('click', function () {
       $(this).siblings('.right-menu').css('top',$('.menu .left-menu').innerHeight());
