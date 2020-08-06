@@ -721,6 +721,7 @@ main {
    }
 }
 
+
 //----------------- ABOUT US -----------------
 
 #about-us {
@@ -1088,6 +1089,176 @@ main {
    }
 } //@media for WE ARE*/
 
+//----------------- WE ARE A TEAM -----------------
+
+#we-are-a-team {
+   color: $color-grey;
+   h3 {
+      margin: 93px 0 19px;
+   }
+   .under-h3 {
+      margin-bottom: 75px;
+   }
+   section {
+      width: 23%;
+      float: left;
+      margin-right: 30px;
+      img {
+         width: 100%; 
+      }
+      p {
+         font-weight: 300;
+         font-size: 16px;
+         line-height: 22px;
+         span {
+            color: $color-orange;
+            font-weight: normal;
+         }
+      }
+      .name-member {
+         text-align: center;
+         margin: 24px 0 9px;
+      }
+   }
+   .social-contacts {
+      margin-top: 10px;
+      li {
+         float: left;
+         margin-right: 9px;
+      }
+      a {
+         display: block;
+         width: 44px;
+         height: 44px;
+         line-height: 44px;
+         text-align: center;
+         background-color: #F0F0F0;
+         border-radius: 44px;
+         font-size: 18px;
+         color: $color-grey;
+         &:hover {
+            background-color: $color-orange;
+            color: $color-white;
+         }
+      }
+   }
+   section:last-child {
+      margin-right: 0;
+   }
+}
+
+//-------@media for WE ARE TEAM---------
+@media (max-width: 1320px) {
+   #we-are-a-team {
+      section {
+         margin-right: 25px;
+         p {
+            font-size: 14px;
+            line-height: 20px;
+         }
+      }
+      .social-contacts {
+         a {
+            width: 42px;
+            height: 42px;
+            line-height: 42px;
+            border-radius: 42px;
+         }
+         li {
+            margin-right: 8px;
+         }
+      }
+   }
+}
+
+@media (max-width: 1200px) {
+   #we-are-a-team {
+      .social-contacts {
+         a {
+            width: 38px;
+            height: 38px;
+            line-height: 38px;
+            border-radius: 38px;
+         }
+         li {
+            margin-right: 5px;
+         }
+      }
+      h3 {
+         margin: 90px 0 14px;
+      }
+      .under-h3 {
+         margin-bottom: 60px;
+         width: 70%;
+      }
+   }
+}
+
+@media (max-width: 992px) {
+   #we-are-a-team {
+      section {
+         width: 40%;
+         margin: 0 35px 35px;
+         .name-member {
+            margin: 20px 0 9px;
+         }
+      }
+      h3 {
+         margin: 70px 0 14px;
+      }
+      .under-h3 {
+         margin-bottom: 50px;
+         width: 80%;
+      }
+      .social-contacts {
+         a {
+            width: 44px;
+            height: 44px;
+            line-height: 44px;
+            border-radius: 44px;
+         } 
+         li {
+            margin-right: 9px;
+         }
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   #we-are-a-team {
+      section {
+         margin: 0 5% 5%;
+      }
+      .social-contacts {
+         li {
+            margin-bottom: 9px;
+         }
+      }
+      .under-h3 {
+         margin-bottom: 45px;
+         width: 91%;
+      }
+   }
+}
+
+@media (max-width: 500px) {
+   #we-are-a-team {
+      section {
+         width: 260px;
+         margin: 0 auto;
+         float: none;
+      }
+      section:last-child {
+         margin-right: auto;
+      }
+      .social-contacts {
+         li {
+            margin-right: 7px;
+            margin-bottom: 40px;
+         }
+      }
+   }
+} //@media for WE ARE TEAM
 
 
 
