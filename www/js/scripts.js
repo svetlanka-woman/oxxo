@@ -93,4 +93,16 @@ $('#slider-about .left-control-slider').on('click', function () {
    }
 });
 
+// portfolio
+
+$('#portfolio figure').hover(function () {
+   $(this).children('figcaption').slideDown(400);
+   $(this).children('.btn-group').fadeIn(400);
+   $(this).children('img').css('opacity','0.6');
+}, function () {
+   $(this).children('figcaption').slideUp(100);
+   $(this).children('.btn-group').fadeOut(100);
+   $(this).children('img').css('opacity','1');
+});
+
 });
