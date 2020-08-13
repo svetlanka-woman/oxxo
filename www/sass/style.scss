@@ -761,16 +761,18 @@ main {
       border-radius: 2px;
       text-align: center;
       line-height: 46px;
+      text-decoration: none;
+      background-color: $color-orange;
+      color: $color-white;
+      transition: background-color 0.5s;
+      &:hover {
+         color: $color-orange;
+         background-color: rgba(0,0,0,0);
+      }
    }
 
    .btn-meet {
-      background-color: $color-orange;
-      color: $color-white;
       margin-right: 30px;
-   }
-
-   .btn-contact {
-      color: $color-orange;
    }
 }
 
@@ -818,7 +820,7 @@ main {
          background-image: url(../images/left-control-hover-about.jpg);
       }
    }
-} // About us
+} 
 
 //-------@media for ABOUT US---------
 @media (max-width: 1320px) {
@@ -1025,7 +1027,7 @@ main {
    .col-2 {
       display: none;
    }
-} //WE ARE
+} 
 
 //-------@media for WE ARE---------
 
@@ -1288,7 +1290,6 @@ main {
       width: 25%;
       margin: 0 0 -2px;
       position: relative;
-      background-color: rgba(0, 0, 0, 0.5);
       figcaption {
          display: none;
          position: absolute;
@@ -1424,6 +1425,11 @@ main {
 }
 
 @media (max-width: 500px) {
+   #see-work {
+      .under-h3 {
+         width: 90%;
+      }
+   }
    #portfolio {
       figure {
          width: 100%;
@@ -1447,7 +1453,112 @@ main {
 } //@media for SEE OUR WORK
 
 
+//----------------- BUY OXXO NOW -----------------
+#buy-oxxo {
+   margin-bottom: 99px;
+   color: $color-grey;
+   h3 {
+      margin: 96px 0 63px;
+   }
+   .under-h3 {
+      font-weight: 400;
+      font-size: 20px;
+      width: 70%;
+      margin-bottom: 35px;
+      span {
+         color: $color-orange;
+      }
+   }
+   .btn-group {
+      text-align: center;
+   }
+   .btn-buy,
+   .btn-contact {
+      font-size: 15px;
+      width: 158px;
+      height: 48px;
+      border: 1px solid $color-orange;
+      border-radius: 2px;
+      line-height: 48px;
+      background-color: $color-orange;
+      color: $color-white;
+      transition: background-color 0.5s;
+      i {
+         margin-right: 6px;
+      }
+      &:hover {
+         color: $color-orange;
+         background-color: rgba(0,0,0,0);
+      }
+   }
+   .btn-buy {
+      margin-right: 30px;
+   }
+}
 
+//-------@media for BUY OXXO NOW---------
+@media (max-width: 1320px) {
+   
+}
+
+@media (max-width: 1200px) {
+   #buy-oxxo {
+      .under-h3 {
+         width: 80%;
+      }
+   }
+}
+
+@media (max-width: 992px) {
+   #buy-oxxo {
+      margin-bottom: 80px;
+      .under-h3 {
+         font-size: 18px;
+         width: 100%;
+      }
+      h3 {
+         margin: 80px 0 17px;
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   #buy-oxxo {
+      .under-h3 {
+         font-size: 17px;
+      }
+      .btn-buy, .btn-contact {
+         font-size: 15px;
+         width: 46%;
+         height: 46px;
+         border-radius: 2px;
+         line-height: 46px;
+      }
+      .btn-buy {
+         margin-right: 20px;
+      }
+   }
+}
+
+@media (max-width: 500px) {
+   #buy-oxxo {
+      margin-bottom: 60px;
+      h3 {
+         margin: 60px 0 17px;
+      }
+      .under-h3 {
+         font-size: 15px;
+         margin-bottom: 25px;
+      }
+      .btn-buy {
+         margin-right: 0px;
+         margin-bottom: 15px;
+      }
+      .btn-buy, .btn-contact {
+         width: 100%;
+      }
+   }
+} //@media for*/
 /*
 -------@media for ---------
 @media (max-width: 1320px) {

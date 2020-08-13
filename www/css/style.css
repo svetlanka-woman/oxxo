@@ -476,13 +476,18 @@ main h4 {
     float: left;
     border-radius: 2px;
     text-align: center;
-    line-height: 46px; }
-  #about-caption .btn-meet {
+    line-height: 46px;
+    text-decoration: none;
     background-color: #ff7200;
     color: #fff;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s; }
+    #about-caption .btn-meet:hover,
+    #about-caption .btn-contact:hover {
+      color: #ff7200;
+      background-color: rgba(0, 0, 0, 0); }
+  #about-caption .btn-meet {
     margin-right: 30px; }
-  #about-caption .btn-contact {
-    color: #ff7200; }
 
 #slider-about {
   width: 48%;
@@ -818,8 +823,7 @@ main h4 {
   float: left;
   width: 25%;
   margin: 0 0 -2px;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.5); }
+  position: relative; }
   #portfolio figure figcaption {
     display: none;
     position: absolute;
@@ -905,6 +909,9 @@ main h4 {
     #portfolio figure .btn-group {
       top: 24%; } }
 @media (max-width: 500px) {
+  #see-work .under-h3 {
+    width: 90%; }
+
   #portfolio figure {
     width: 100%; }
     #portfolio figure .btn-group .btn-zoom, #portfolio figure .btn-group .btn-link {
@@ -917,6 +924,77 @@ main h4 {
       font-size: 20px;
       padding: 5% 0;
       line-height: 125%; } }
+#buy-oxxo {
+  margin-bottom: 99px;
+  color: #666666; }
+  #buy-oxxo h3 {
+    margin: 96px 0 63px; }
+  #buy-oxxo .under-h3 {
+    font-weight: 400;
+    font-size: 20px;
+    width: 70%;
+    margin-bottom: 35px; }
+    #buy-oxxo .under-h3 span {
+      color: #ff7200; }
+  #buy-oxxo .btn-group {
+    text-align: center; }
+  #buy-oxxo .btn-buy,
+  #buy-oxxo .btn-contact {
+    font-size: 15px;
+    width: 158px;
+    height: 48px;
+    border: 1px solid #ff7200;
+    border-radius: 2px;
+    line-height: 48px;
+    background-color: #ff7200;
+    color: #fff;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s; }
+    #buy-oxxo .btn-buy i,
+    #buy-oxxo .btn-contact i {
+      margin-right: 6px; }
+    #buy-oxxo .btn-buy:hover,
+    #buy-oxxo .btn-contact:hover {
+      color: #ff7200;
+      background-color: rgba(0, 0, 0, 0); }
+  #buy-oxxo .btn-buy {
+    margin-right: 30px; }
+
+@media (max-width: 1200px) {
+  #buy-oxxo .under-h3 {
+    width: 80%; } }
+@media (max-width: 992px) {
+  #buy-oxxo {
+    margin-bottom: 80px; }
+    #buy-oxxo .under-h3 {
+      font-size: 18px;
+      width: 100%; }
+    #buy-oxxo h3 {
+      margin: 80px 0 17px; } }
+@media (max-width: 768px) {
+  #buy-oxxo .under-h3 {
+    font-size: 17px; }
+  #buy-oxxo .btn-buy, #buy-oxxo .btn-contact {
+    font-size: 15px;
+    width: 46%;
+    height: 46px;
+    border-radius: 2px;
+    line-height: 46px; }
+  #buy-oxxo .btn-buy {
+    margin-right: 20px; } }
+@media (max-width: 500px) {
+  #buy-oxxo {
+    margin-bottom: 60px; }
+    #buy-oxxo h3 {
+      margin: 60px 0 17px; }
+    #buy-oxxo .under-h3 {
+      font-size: 15px;
+      margin-bottom: 25px; }
+    #buy-oxxo .btn-buy {
+      margin-right: 0px;
+      margin-bottom: 15px; }
+    #buy-oxxo .btn-buy, #buy-oxxo .btn-contact {
+      width: 100%; } }
 /*
 -------@media for ---------
 @media (max-width: 1320px) {
