@@ -105,4 +105,29 @@ $('#portfolio figure').hover(function () {
    $(this).children('img').css('opacity','1');
 });
 
+// clients-say slider comments
+
+$('#clients-say .right-control-slider').on('click', function () {
+   $('#clients-say section.active-slide').toggleClass('active-slide').next().toggleClass('active-slide');
+   if ($('#clients-say section:last').attr('class')=='active-slide') {
+      $(this).fadeOut(1);
+      $('#clients-say .left-control-slider').css('margin-right','80px');
+   }
+   if ($('#clients-say section:first').attr('class')!='active-slide') {
+      $('#clients-say .left-control-slider').fadeIn(300);
+      $('#clients-say .right-control-slider').css('margin-left','0px');
+   }
+});
+$('#clients-say .left-control-slider').on('click', function () {
+   $('#clients-say section.active-slide').toggleClass('active-slide').prev().toggleClass('active-slide');
+   if ($('#clients-say section:first').attr('class')=='active-slide') {
+      $(this).fadeOut(1);
+      $('#clients-say .right-control-slider').css('margin-left','78px');
+   }
+   if ($('#clients-say section:last').attr('class')!='active-slide') {
+      $('#clients-say .right-control-slider').fadeIn(300);
+      $('#clients-say .left-control-slider').css('margin-right','26px');
+   }
+});
+
 });

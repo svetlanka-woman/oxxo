@@ -995,6 +995,102 @@ main h4 {
       margin-bottom: 15px; }
     #buy-oxxo .btn-buy, #buy-oxxo .btn-contact {
       width: 100%; } }
+#clients-say {
+  background-image: url(../images/bg-clients-say.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 99px;
+  color: #f0f0f0; }
+  #clients-say h3 {
+    margin: 0px 0 76px;
+    padding-top: 96px;
+    background-image: url(../images/h3-line-white.png); }
+  #clients-say .btn-group {
+    text-align: center;
+    margin-bottom: 100px; }
+  #clients-say .left-control-slider,
+  #clients-say .right-control-slider {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    -webkit-transition: background-image 0.7s;
+    transition: background-image 0.7s;
+    background-size: contain; }
+  #clients-say .right-control-slider {
+    background-image: url(../images/right-control-about.png); }
+    #clients-say .right-control-slider:hover {
+      background-image: url(../images/right-control-hover-about.jpg); }
+  #clients-say .left-control-slider {
+    background-image: url(../images/left-control-about.png);
+    margin-right: 26px; }
+    #clients-say .left-control-slider:hover {
+      background-image: url(../images/left-control-hover-about.jpg); }
+  #clients-say section {
+    text-align: center;
+    display: none; }
+    #clients-say section.active-slide {
+      display: block; }
+    #clients-say section h4 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 26px;
+      text-transform: uppercase; }
+    #clients-say section .comment {
+      width: 60%;
+      font-size: 16px;
+      margin: 0 auto;
+      line-height: 23px; }
+    #clients-say section .client-name {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 36px 0 40px; }
+      #clients-say section .client-name span {
+        color: #ff7200;
+        font-weight: 400; }
+
+@media (max-width: 1200px) {
+  #clients-say {
+    margin-bottom: 90px; }
+    #clients-say h3 {
+      padding-top: 90px; }
+    #clients-say section .comment {
+      width: 70%; }
+    #clients-say .btn-group {
+      margin-bottom: 90px; } }
+@media (max-width: 992px) {
+  #clients-say {
+    margin-bottom: 80px; }
+    #clients-say h3 {
+      padding-top: 80px;
+      margin: 0px 0 70px; }
+    #clients-say section .comment {
+      width: 100%; }
+    #clients-say .btn-group {
+      margin-bottom: 80px; } }
+@media (max-width: 768px) {
+  #clients-say {
+    margin-bottom: 70px; }
+    #clients-say h3 {
+      padding-top: 70px;
+      margin: 0px 0 60px; }
+    #clients-say .btn-group {
+      margin-bottom: 70px; } }
+@media (max-width: 500px) {
+  #clients-say {
+    margin-bottom: 60px; }
+    #clients-say h3 {
+      padding-top: 60px;
+      margin: 0px 0 50px; }
+    #clients-say section h4 {
+      margin-bottom: 20px; }
+    #clients-say section .comment {
+      font-size: 15px;
+      line-height: 20px; }
+    #clients-say section .client-name {
+      margin: 20px 0 30px; }
+    #clients-say .btn-group {
+      margin-bottom: 55px; } }
 /*
 -------@media for ---------
 @media (max-width: 1320px) {
