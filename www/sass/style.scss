@@ -1562,7 +1562,6 @@ main {
    background-image: url(../images/bg-clients-say.jpg);
    background-repeat: no-repeat;
    background-size: cover;
-   margin-bottom: 99px;
    color: #f0f0f0;
    h3 {
       margin: 0px 0 76px;
@@ -1631,7 +1630,6 @@ main {
 
 @media (max-width: 1200px) {
    #clients-say {
-      margin-bottom: 90px;
       h3 {
          padding-top: 90px;
       }
@@ -1648,7 +1646,6 @@ main {
 
 @media (max-width: 992px) {
    #clients-say {
-      margin-bottom: 80px;
       h3 {
          padding-top: 80px;
          margin: 0px 0 70px;
@@ -1664,7 +1661,6 @@ main {
 
 @media (max-width: 768px) {
    #clients-say {
-      margin-bottom: 70px;
       h3 {
          padding-top: 70px;
          margin: 0px 0 60px;
@@ -1677,7 +1673,6 @@ main {
 
 @media (max-width: 500px) {
    #clients-say {
-      margin-bottom: 60px;
       h3 {
          padding-top: 60px;
          margin: 0px 0 50px;
@@ -1698,7 +1693,174 @@ main {
          margin-bottom: 55px;
       }
    }
-} //@media for
+} //@media for CLIENTS SAY
+
+//----------------- Slider-clients -----------------
+#slider-clients {
+   margin-bottom: 99px;
+   background-color: $color-orange;
+   .left-control-slider,
+   .right-control-slider {
+      display: inline-block;
+      float: left;
+      width: 48px;
+      height: 48px;
+      background-repeat: no-repeat;
+      transition: background-image 0.7s;
+      background-size: contain;
+      margin: 56px 68px;
+      &.hiden {
+         opacity: 0.3;
+      }
+      &.active {
+         opacity: 1;
+      }
+   }
+
+   .right-control-slider {
+      background-image: url(../images/right-control-about.png);
+      &:not(.hiden):hover {
+         background-image: url(../images/right-control-hover-about.jpg);
+      }
+   }
+
+   .left-control-slider {
+      background-image: url(../images/left-control-about.png);
+      &:not(.hiden):hover {
+         background-image: url(../images/left-control-hover-about.jpg);
+      }
+   }
+
+   li {
+      float: left;
+      position: relative;
+      width: 170px;
+      padding: 40px 15px 38px;
+      &.active {
+         display: block;
+      }
+      &.hiden-client {
+         display: none;
+      }
+      img {
+         width: 100%;
+      }
+   }
+   
+   .wrap-caption {
+      background-image: url(../images/client-note.png);
+      background-repeat: no-repeat;
+      background-position: center 1px;
+      position: absolute;
+      z-index: 100;
+      top: 103px;
+      padding-top: 7px;
+      width: 100%;
+      display: none;
+   }
+   .caption-company {
+      background-color: $color-grey;
+      color: $color-white;
+      text-align: center;
+      font-weight: 300;
+      border-radius: 4px;
+      padding: 13px;
+      h5 {
+         font-size: 14px;
+      }
+      p {
+         font-size: 12px;
+         line-height: 18px;
+         margin: 8px 0 2px;
+      }
+      a {
+         font-size: 12px;
+         color: $color-orange;
+         text-decoration: none;
+      }
+   }
+}
+//-------@media for Slider-clients---------
+@media (max-width: 1320px) {
+   #slider-clients {
+      .left-control-slider,
+      .right-control-slider {
+         margin: 50px 56px;
+      }
+      li {
+         width: 162px;
+         padding-bottom: 34px;
+      }
+   }
+}
+
+@media (max-width: 1200px) {
+   #slider-clients {
+      .left-control-slider,
+      .right-control-slider {
+         margin: 40px 20px;
+      }
+      li {
+         width: 160px;
+         padding: 30px 15px 20px;
+      }
+      .wrap-caption {
+         top: 103px;
+      }
+   }
+}
+
+@media (max-width: 992px) {
+   #slider-clients {
+      li.col-3 {
+         display: none;
+      }
+      .left-control-slider, 
+      .right-control-slider {
+         margin: 40px 12px;
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   #slider-clients {
+      .container {
+         max-width: 450px;
+      }
+      li.col-2 {
+         display: none;
+      }
+      .left-control-slider, 
+      .right-control-slider {
+         margin: 17px 0px;
+      }
+      li {
+         width: 150px;
+         padding: 10px 13px 0px;
+      }
+   }
+}
+
+@media (max-width: 500px) {
+   #slider-clients{
+      .left-control-slider, 
+      .right-control-slider {
+         width: 30px;
+         height: 30px;
+      }
+      li {
+         width: 129px;
+         padding: 10px 5px 0px;
+      }
+      .container {
+         max-width: 338px;
+      }
+   }
+
+} //@media for Slider-clients
+
+
+
 
 /*
 -------@media for ---------

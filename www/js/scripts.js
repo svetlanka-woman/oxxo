@@ -130,4 +130,52 @@ $('#clients-say .left-control-slider').on('click', function () {
    }
 });
 
+// slider-clients 
+
+$('#slider-clients .right-control-slider').on('click', function () {
+   if ($(this).attr('class') != 'right-control-slider hiden') {
+      // if (window.innerWidth < 993 && $('#slider-clients li.active:last').css('display')=='none') {
+      //    $('#slider-clients li.active:last').toggleClass('active hiden-client');
+      // }
+      $('#slider-clients li.active:first').fadeToggle(1).toggleClass('active hiden-client');
+      $('#slider-clients li.active:last').next().fadeToggle(1).toggleClass('active hiden-client');
+      if ($('#slider-clients li:last').attr('class') == 'active') {
+         $(this).toggleClass('hiden');
+      }
+      if ($('#slider-clients li:first').attr('class') == 'hiden-client' && $('#slider-clients li:first').next().attr('class') == 'active') {
+         $('#slider-clients .left-control-slider').toggleClass('hiden');
+      }
+   }
+});
+
+$('#slider-clients .left-control-slider').on('click', function () {
+   if ($(this).attr('class') != 'left-control-slider hiden') {
+      $('#slider-clients li.active:last').fadeToggle(1).toggleClass('active hiden-client');
+      $('#slider-clients li.active:first').prev().fadeToggle(1).toggleClass('active hiden-client');
+      if ($('#slider-clients li:first').attr('class') == 'active') {
+         $(this).toggleClass('hiden');
+      }
+      if ($('#slider-clients li:last').attr('class') == 'hiden-client' && $('#slider-clients li:last').prev().attr('class') == 'active') {
+         $('#slider-clients .right-control-slider').toggleClass('hiden');
+      }
+   }
+});
+
+// $(window).resize(function() {
+//    if ($(window).width() < 993) {
+//       $('#slider-clients li.active').get(2).fadeToggle(1).toggleClass('active hiden-client');
+//       alert('ggg');
+//    }
+// });
+
+// $(window).resize(function() {
+//    alert($(window).width());
+//  });
+
+$('#slider-clients li img').hover(function () {
+   $(this).next('.wrap-caption').show(200);
+}, function () {
+   $(this).next('.wrap-caption').hide(200);
+});
+
 });

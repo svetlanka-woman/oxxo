@@ -999,7 +999,6 @@ main h4 {
   background-image: url(../images/bg-clients-say.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 99px;
   color: #f0f0f0; }
   #clients-say h3 {
     margin: 0px 0 76px;
@@ -1050,47 +1049,149 @@ main h4 {
         font-weight: 400; }
 
 @media (max-width: 1200px) {
-  #clients-say {
-    margin-bottom: 90px; }
-    #clients-say h3 {
-      padding-top: 90px; }
-    #clients-say section .comment {
-      width: 70%; }
-    #clients-say .btn-group {
-      margin-bottom: 90px; } }
+  #clients-say h3 {
+    padding-top: 90px; }
+  #clients-say section .comment {
+    width: 70%; }
+  #clients-say .btn-group {
+    margin-bottom: 90px; } }
 @media (max-width: 992px) {
-  #clients-say {
-    margin-bottom: 80px; }
-    #clients-say h3 {
-      padding-top: 80px;
-      margin: 0px 0 70px; }
-    #clients-say section .comment {
-      width: 100%; }
-    #clients-say .btn-group {
-      margin-bottom: 80px; } }
+  #clients-say h3 {
+    padding-top: 80px;
+    margin: 0px 0 70px; }
+  #clients-say section .comment {
+    width: 100%; }
+  #clients-say .btn-group {
+    margin-bottom: 80px; } }
 @media (max-width: 768px) {
-  #clients-say {
-    margin-bottom: 70px; }
-    #clients-say h3 {
-      padding-top: 70px;
-      margin: 0px 0 60px; }
-    #clients-say .btn-group {
-      margin-bottom: 70px; } }
+  #clients-say h3 {
+    padding-top: 70px;
+    margin: 0px 0 60px; }
+  #clients-say .btn-group {
+    margin-bottom: 70px; } }
 @media (max-width: 500px) {
-  #clients-say {
-    margin-bottom: 60px; }
-    #clients-say h3 {
-      padding-top: 60px;
-      margin: 0px 0 50px; }
-    #clients-say section h4 {
-      margin-bottom: 20px; }
-    #clients-say section .comment {
-      font-size: 15px;
-      line-height: 20px; }
-    #clients-say section .client-name {
-      margin: 20px 0 30px; }
-    #clients-say .btn-group {
-      margin-bottom: 55px; } }
+  #clients-say h3 {
+    padding-top: 60px;
+    margin: 0px 0 50px; }
+  #clients-say section h4 {
+    margin-bottom: 20px; }
+  #clients-say section .comment {
+    font-size: 15px;
+    line-height: 20px; }
+  #clients-say section .client-name {
+    margin: 20px 0 30px; }
+  #clients-say .btn-group {
+    margin-bottom: 55px; } }
+#slider-clients {
+  margin-bottom: 99px;
+  background-color: #ff7200; }
+  #slider-clients .left-control-slider,
+  #slider-clients .right-control-slider {
+    display: inline-block;
+    float: left;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    -webkit-transition: background-image 0.7s;
+    transition: background-image 0.7s;
+    background-size: contain;
+    margin: 56px 68px; }
+    #slider-clients .left-control-slider.hiden,
+    #slider-clients .right-control-slider.hiden {
+      opacity: 0.3; }
+    #slider-clients .left-control-slider.active,
+    #slider-clients .right-control-slider.active {
+      opacity: 1; }
+  #slider-clients .right-control-slider {
+    background-image: url(../images/right-control-about.png); }
+    #slider-clients .right-control-slider:not(.hiden):hover {
+      background-image: url(../images/right-control-hover-about.jpg); }
+  #slider-clients .left-control-slider {
+    background-image: url(../images/left-control-about.png); }
+    #slider-clients .left-control-slider:not(.hiden):hover {
+      background-image: url(../images/left-control-hover-about.jpg); }
+  #slider-clients li {
+    float: left;
+    position: relative;
+    width: 170px;
+    padding: 40px 15px 38px; }
+    #slider-clients li.active {
+      display: block; }
+    #slider-clients li.hiden-client {
+      display: none; }
+    #slider-clients li img {
+      width: 100%; }
+  #slider-clients .wrap-caption {
+    background-image: url(../images/client-note.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    position: absolute;
+    z-index: 100;
+    top: 103px;
+    padding-top: 7px;
+    width: 100%;
+    display: none; }
+  #slider-clients .caption-company {
+    background-color: #666666;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    border-radius: 4px;
+    padding: 13px; }
+    #slider-clients .caption-company h5 {
+      font-size: 14px; }
+    #slider-clients .caption-company p {
+      font-size: 12px;
+      line-height: 18px;
+      margin: 8px 0 2px; }
+    #slider-clients .caption-company a {
+      font-size: 12px;
+      color: #ff7200;
+      text-decoration: none; }
+
+@media (max-width: 1320px) {
+  #slider-clients .left-control-slider,
+  #slider-clients .right-control-slider {
+    margin: 50px 56px; }
+  #slider-clients li {
+    width: 162px;
+    padding-bottom: 34px; } }
+@media (max-width: 1200px) {
+  #slider-clients .left-control-slider,
+  #slider-clients .right-control-slider {
+    margin: 40px 20px; }
+  #slider-clients li {
+    width: 160px;
+    padding: 30px 15px 20px; }
+  #slider-clients .wrap-caption {
+    top: 103px; } }
+@media (max-width: 992px) {
+  #slider-clients li.col-3 {
+    display: none; }
+  #slider-clients .left-control-slider,
+  #slider-clients .right-control-slider {
+    margin: 40px 12px; } }
+@media (max-width: 768px) {
+  #slider-clients .container {
+    max-width: 450px; }
+  #slider-clients li.col-2 {
+    display: none; }
+  #slider-clients .left-control-slider,
+  #slider-clients .right-control-slider {
+    margin: 17px 0px; }
+  #slider-clients li {
+    width: 150px;
+    padding: 10px 13px 0px; } }
+@media (max-width: 500px) {
+  #slider-clients .left-control-slider,
+  #slider-clients .right-control-slider {
+    width: 30px;
+    height: 30px; }
+  #slider-clients li {
+    width: 129px;
+    padding: 10px 5px 0px; }
+  #slider-clients .container {
+    max-width: 338px; } }
 /*
 -------@media for ---------
 @media (max-width: 1320px) {
