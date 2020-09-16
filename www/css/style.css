@@ -1164,7 +1164,7 @@ main h4 {
     width: 160px;
     padding: 30px 15px 20px; }
   #slider-clients .wrap-caption {
-    top: 103px; } }
+    top: 90px; } }
 @media (max-width: 992px) {
   #slider-clients li.col-3 {
     display: none; }
@@ -1172,26 +1172,135 @@ main h4 {
   #slider-clients .right-control-slider {
     margin: 40px 12px; } }
 @media (max-width: 768px) {
-  #slider-clients .container {
-    max-width: 450px; }
-  #slider-clients li.col-2 {
-    display: none; }
-  #slider-clients .left-control-slider,
-  #slider-clients .right-control-slider {
-    margin: 17px 0px; }
-  #slider-clients li {
-    width: 150px;
-    padding: 10px 13px 0px; } }
+  #slider-clients {
+    margin-bottom: 80px; }
+    #slider-clients .container {
+      max-width: 450px; }
+    #slider-clients li.col-2 {
+      display: none; }
+    #slider-clients .left-control-slider,
+    #slider-clients .right-control-slider {
+      margin: 17px 0px; }
+    #slider-clients li {
+      width: 150px;
+      padding: 10px 13px 0px; }
+    #slider-clients .wrap-caption {
+      top: 60px; }
+    #slider-clients .caption-company {
+      padding: 8px; }
+      #slider-clients .caption-company p {
+        line-height: 12px;
+        margin: 6px 0 0px; } }
 @media (max-width: 500px) {
-  #slider-clients .left-control-slider,
-  #slider-clients .right-control-slider {
-    width: 30px;
-    height: 30px; }
-  #slider-clients li {
-    width: 129px;
-    padding: 10px 5px 0px; }
-  #slider-clients .container {
-    max-width: 338px; } }
+  #slider-clients {
+    margin-bottom: 60px; }
+    #slider-clients .left-control-slider,
+    #slider-clients .right-control-slider {
+      width: 30px;
+      height: 30px; }
+    #slider-clients li {
+      width: 129px;
+      padding: 10px 5px 0px; }
+    #slider-clients .container {
+      max-width: 338px; } }
+#responsive {
+  color: #666666;
+  margin-bottom: 200px; }
+  #responsive section {
+    float: left; }
+  #responsive .under-h3 {
+    margin: 16px auto 75px; }
+  #responsive .img-responsive {
+    width: 48.7%;
+    margin-right: 30px; }
+    #responsive .img-responsive img {
+      width: 100%; }
+  #responsive .caption-responsive {
+    width: 40.1%;
+    padding-left: 100px;
+    font-weight: 300; }
+    #responsive .caption-responsive dt {
+      font-size: 18px; }
+    #responsive .caption-responsive dd {
+      font-size: 14px;
+      position: relative;
+      margin: 11px 0 53px;
+      line-height: 20px; }
+    #responsive .caption-responsive .fas {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      border-radius: 70px;
+      color: #fff;
+      background-color: #ff7200;
+      text-align: center;
+      line-height: 70px;
+      font-size: 24px;
+      left: -99px;
+      top: -26px; }
+
+@media (max-width: 1320px) {
+  #responsive .under-h3 {
+    width: 60%; }
+  #responsive .img-responsive {
+    width: 48.3%; }
+  #responsive .caption-responsive {
+    width: 39.7%; }
+    #responsive .caption-responsive dd {
+      margin: 11px 0 30px;
+      line-height: 18px; } }
+@media (max-width: 1200px) {
+  #responsive .under-h3 {
+    margin: 16px auto 60px; }
+  #responsive .img-responsive {
+    width: 40%; }
+  #responsive .caption-responsive {
+    width: 45%; }
+    #responsive .caption-responsive dd {
+      margin: 11px 0 26px; } }
+@media (max-width: 992px) {
+  #responsive .under-h3 {
+    width: 70%;
+    margin: 16px auto 50px; }
+  #responsive .img-responsive {
+    width: 70%;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 50px; }
+  #responsive .caption-responsive {
+    width: 88%; }
+    #responsive .caption-responsive dd {
+      margin: 11px 0 48px;
+      line-height: 20px; } }
+@media (max-width: 768px) {
+  #responsive .under-h3 {
+    width: 90%;
+    margin: 14px auto 40px; }
+  #responsive .caption-responsive {
+    width: 80%;
+    padding-left: 90px; }
+    #responsive .caption-responsive .fas {
+      left: -88px; }
+    #responsive .caption-responsive dd {
+      margin: 11px 0 30px;
+      line-height: 18px; } }
+@media (max-width: 500px) {
+  #responsive .under-h3 {
+    width: 100%;
+    margin: 14px auto 30px; }
+  #responsive .img-responsive {
+    width: 80%; }
+  #responsive .caption-responsive {
+    padding-left: 70px; }
+    #responsive .caption-responsive .fas {
+      width: 60px;
+      height: 60px;
+      border-radius: 60px;
+      line-height: 60px;
+      font-size: 22px;
+      left: -70px; }
+    #responsive .caption-responsive dd {
+      line-height: 16px; } }
 /*
 -------@media for ---------
 @media (max-width: 1320px) {

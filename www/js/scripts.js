@@ -134,9 +134,6 @@ $('#clients-say .left-control-slider').on('click', function () {
 
 $('#slider-clients .right-control-slider').on('click', function () {
    if ($(this).attr('class') != 'right-control-slider hiden') {
-      // if (window.innerWidth < 993 && $('#slider-clients li.active:last').css('display')=='none') {
-      //    $('#slider-clients li.active:last').toggleClass('active hiden-client');
-      // }
       $('#slider-clients li.active:first').fadeToggle(1).toggleClass('active hiden-client');
       $('#slider-clients li.active:last').next().fadeToggle(1).toggleClass('active hiden-client');
       if ($('#slider-clients li:last').attr('class') == 'active') {
