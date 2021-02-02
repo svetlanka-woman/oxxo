@@ -10,7 +10,10 @@
     rel="stylesheet">
   <link href="css/normalize.css" type="text/css" rel="stylesheet" />
   <link href="css/style.css" type="text/css" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/dc47546bfb.js" crossorigin="anonymous"></script>
+  <link href="css/fontawesome-all.css" rel="stylesheet">
+  <script defer src="js/fontawesome-all.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/dc47546bfb.js" crossorigin="anonymous"></script> -->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script> -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -103,7 +106,7 @@
           <li><a href="#">OUR TEAM</a></li>
         </ul>
         <div class="logo">
-          <h1>OXXO</h1>
+          <h1>OXX<span>O</span></h1>
           <h2>RESPONSIVE THEME</h2>
         </div>
         <ul class="right-menu">
@@ -216,7 +219,7 @@
           <img src="images/member-1.png" alt="Photo Jenniffer Doe">
           <p class="name-member">Jenniffer Doe <span class="post-member">/ Web Designer</span></p>
           <p>Lorem ipsum dolor sit amet, consec<wbr>tetuer adipiscing elit, sed diam nonu nibh euismod lorem ipsum dolor.</p>
-          <ul class="social-contacts">
+          <ul class="social-contacts clear">
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
@@ -228,7 +231,7 @@
           <img src="images/member-2.png" alt="Photo John Doe">
           <p class="name-member">John Doe <span class="post-member">/ General Manager</span></p>
           <p>Lorem ipsum dolor sit amet, consec<wbr>tetuer adipiscing elit, sed diam nonu nibh euismod lorem ipsum dolor.</p>
-          <ul class="social-contacts">
+          <ul class="social-contacts clear">
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
@@ -241,7 +244,7 @@
           <img src="images/member-3.png" alt="Photo Andrea Doe">
           <p class="name-member">Andrea Doe <span class="post-member">/ Graphic Designer</span></p>
           <p>Lorem ipsum dolor sit amet, consec<wbr>tetuer adipiscing elit, sed diam nonu nibh euismod lorem ipsum dolor.</p>
-          <ul class="social-contacts">
+          <ul class="social-contacts clear">
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
@@ -253,7 +256,7 @@
           <img src="images/member-4.png" alt="Photo Michael Doe">
           <p class="name-member">Michael Doe <span class="post-member">/ CEO </span></p>
           <p>Lorem ipsum dolor sit amet, consec<wbr>tetuer adipiscing elit, sed diam nonu nibh euismod lorem ipsum dolor.</p>
-          <ul class="social-contacts">
+          <ul class="social-contacts clear">
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
@@ -268,8 +271,7 @@
       <div class="container">
         <h3>SEE OUR WORK.</h3>
         <p class="under-h3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-
-        <section id="portfolio">
+        <section id="portfolio" class="clear">
           <figure>
             <img src="images/portfolio-1.jpg" alt="Photo portfolio A CAR">
             <div class="btn-group">
@@ -350,7 +352,6 @@
               <span>PHOTOGRAPHY</span>
             </figcaption>
           </figure>
-          <div class="clear"></div>
         </section>
       </div>
     </article><!--/#see-work-->
@@ -359,10 +360,9 @@
       <div class="container">
         <h3>BUY OXXO NOW!</h3>
         <p class="under-h3">We are offering you a lot of <span>features</span>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
-        <div class="btn-group">
-          <button class="btn-buy"><i class="fas fa-shopping-cart"></i>BUY NOW</button>
-          <button class="btn-contact"><i class="far fa-envelope"></i>CONTACT US</button>
-          <div class="clear"></div>
+        <div class="btn-group clear">
+          <button class="btn-buy"><span><i class="fas fa-shopping-cart"></i></span>BUY NOW</button>
+          <button class="btn-contact"><span><i class="far fa-envelope"></i></span>CONTACT US</button>
         </div>
       </div>
     </article><!--/#buy-oxxo-->
@@ -387,10 +387,9 @@
           <p class="client-name">TOM DOE /<span> LOREM IPSUM INC</span></p>
         </section>
 
-        <div class="btn-group">
+        <div class="btn-group clear">
           <a class="left-control-slider"></a>
           <a class="right-control-slider"></a>
-          <div class="clear"></div>
         </div>
       </div>
     </article><!--/#client-say-->
@@ -459,10 +458,8 @@
               </div>
             </div>
           </li>
-          
         </ul>
         <a class="right-control-slider"></a>
-        <div class="clear"></div>
       </div>
     </article><!--/#slider-clients-->
     
@@ -478,18 +475,112 @@
         <section class="caption-responsive">
           <dl>
             <dt>Responsive Layout</dt>
-            <dd><i class="fas fa-desktop"></i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum&shy;my nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</dd>
+            <dd><span><i class="fas fa-desktop"></i></span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum&shy;my nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</dd>
             <dt>Fully Customizable</dt>
-            <dd><i class="fas fa-magic"></i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam non&shy;ummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</dd>
+            <dd><span><i class="fas fa-magic"></i></span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam non&shy;ummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</dd>
             <dt>Powerful. Impressive.</dt>
-            <dd><i class="fas fa-bolt"></i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam non&shy;ummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</dd>
+            <dd><span><i class="fas fa-bolt"></i></span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam non&shy;ummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</dd>
           </dl>
         </section>
-      </div>
-    </article><!--/#about-us-->
-    
 
+      </div>
+    </article><!--/#responsive-->
+    
+    <article id="contact">
+      <div class="container"> 
+
+        <section class="contact-info">
+          <h4><span><i class="fas fa-map-marker-alt"></i></span>Contact info</h4>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+          <dl>
+            <dt>Adress:</dt>
+            <dd>13th Street, No:25, Fatih / ISTANBUL</dd>
+            <dd class="two-lines">13th Street, No:25, <br>Fatih / ISTANBUL</dd>
+            <dt>Phone:</dt>
+            <dd>+90 212 555 44 55 - +90 212 444 33 22</dd>
+            <dd class="two-lines">+90 212 555 44 55 - <br>+90 212 444 33 22</dd>
+            <dt>Mail:</dt>
+            <dd>info@companyweb.com</dd>
+          </dl>
+          <ul class="social-contacts clear">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fas fa-basketball-ball"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </section>
+
+        <section class="latest-posts">
+          <h4><span><i class="fas fa-align-right"></i></span>Latest Posts</h4>
+          <div class="post">
+            <img src="images/post1.jpg" alt="Post1">
+            <h5>Lorem Ipsum Post Title</h5>
+            <p>Lorem ipsum dolor sit amet, conse adipiscing elit. Lorem</p>
+            <p class="date-author">8 April, 2014 - by Admin</p>
+          </div>
+          <div class="post">
+            <img src="images/post2.jpg" alt="Post2">
+            <h5>Lorem Ipsum Post Title</h5>
+            <p>Lorem ipsum dolor sit amet, conse adipiscing elit. Lorem</p>
+            <p class="date-author">8 April, 2014 - by Admin</p>
+          </div>
+          <div class="post">
+            <img src="images/post3.jpg" alt="Post3">
+            <h5>Lorem Ipsum Post Title</h5>
+            <p>Lorem ipsum dolor sit amet, conse adipiscing elit. Lorem</p>
+            <p class="date-author">8 April, 2014 - by Admin</p>
+          </div>
+        </section>
+
+        <section class="our-services">
+          <h4><span><i class="fas fa-leaf"></i></span>Our Services</h4>
+          <ul>
+            <li>Web Design & Development<button class="btn-toggle" type="button">+</button>
+            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lecto&shy;rum. Mirum est notare quam littera gothica, quam nunc. Claritas est etiam processus dynamicus, qui sequitur mutationem tudium</p></li>
+            <li>PHP & Wordpress Coding<button class="btn-toggle" type="button">+</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo odit officiis voluptatibus reprehenderit error deleniti ipsam voluptas, architecto necessitatibus perspiciatis at provident quia delectus earum corporis voluptatem in quibusdam?</p></li>
+            <li>HTML 5 & CSS 3<button class="btn-toggle" type="button">+</button>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum aperiam error cum illo tempore, dignissimos quis odio quisquam deserunt deleniti nisi eaque earum quas eos nobis. Id dolorem aspernatur quis.</p></li>
+            <li>Project Management<button class="btn-toggle" type="button">+</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt natus reprehenderit, suscipit quaerat laboriosam iure cupiditate itaque, veritatis nisi eaque, culpa corporis ipsam assumenda inventore accusantium! Cumque molestiae temporibus ut!</p></li>
+          </ul>
+        </section>
+
+        <section class="contact-form">
+          <h4><span><i class="far fa-envelope"></span></i>Contact Form</h4>
+          <form action="formdata.php" method="post" nama="contact-form">
+            <p><input class="form-data form-name" type="text" name="name" placeholder="Name*"><span><i class="fas fa-user"></i></span></p>
+            <p><input class="form-data form-email" type="text" name="e-mail" placeholder="E-Mail*"><span><i class="far fa-envelope"></i></span></p>
+            <p><textarea class="form-data form-message" name="message" placeholder="Message*" maxlength="256"></textarea><span><i class="fas fa-pencil-alt"></i></span></p>
+            <p><input class="form-btn-submit" type="submit" name="submit" value="SUBMIT"><span><i class="far fa-envelope far-btn"></i></span></p>
+          </form>
+        </section>
+
+      </div>
+    </article><!--/#contact-->
+    
   </main>
+
+  <footer>
+    <div class="container">
+      <div class="logo">
+        <h1>OXX<span>O</spa></h1>
+        <h2>RESPONSIVE THEME</h2>
+      </div>
+      <nav class="clear">
+        <button class="bar-toggle" type="button"><i class="fas fa-bars"></i></button>
+        <button class="btn-close" type="button"><i class="fas fa-times"></i></button>
+        <ul class="footer-menu clear">
+          <li><a href="#">Buy This Theme</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Who we are?</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">2014 ® All Rights Reserved - OXXO Responsive Theme</p>
+    </div>
+  </footer>
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/scripts.js"></script>

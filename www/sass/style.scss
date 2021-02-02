@@ -7,6 +7,7 @@ $color-dark-grey: #343434;
 $color-orange: #ff7200;
 $color-white: #fff;
 
+
 body {
    background-color: $color-white;
    font-family: $font-family-Open;
@@ -14,7 +15,7 @@ body {
 
 .container {
    margin: 0 auto;
-   outline: 1px solid #ff0000;
+   // outline: 1px solid #ff0000;
    min-width: 320px;
    height: auto;
    padding: 0 15px;
@@ -56,7 +57,9 @@ body {
    clear: both;
 }
 
-.clear {
+.clear:after {
+   display: table;
+   content: " ";
    clear: both;
 }
 
@@ -79,12 +82,10 @@ header {
    position: relative;
    border-top: 3px solid $color-orange;
    border-bottom: 3px solid $color-orange;
-
    .item {
       >img {
          width: 100%;
          display: none;
-
          &.active-slide {
             display: block;
             max-height: 900px;
@@ -155,7 +156,6 @@ header {
          &:hover {
 
             background-color: rgba(0, 0, 0, 0.3);
-            // opacity: 0.5;
             color: $color-orange;
          }
       }
@@ -183,7 +183,6 @@ header {
    .left-menu,
    .right-menu {
       float: left;
-      outline: 1px solid #00ff00;
 
       >li {
          float: left;
@@ -268,7 +267,6 @@ header {
       color: $color-white;
       margin: 0 15px;
       cursor: pointer;
-
       h1 {
          font-family: $font-family-Source;
          font-size: 50px;
@@ -276,7 +274,6 @@ header {
          text-transform: lowercase;
          line-height: 44px;
       }
-
       h2 {
          font-size: 11px;
          padding-top: 3px;
@@ -305,13 +302,14 @@ header {
       border: 1px solid $color-dark-grey;
       color: $color-dark-grey;
       margin: 5px 33px;
-
       h1 {
          font-size: 39px;
          margin: 0;
          line-height: 32px;
+         span {
+            color: $color-orange;
+         }
       }
-
       h2 {
          font-size: 9px;
          font-weight: bold;
@@ -1479,11 +1477,11 @@ main {
       height: 48px;
       border: 1px solid $color-orange;
       border-radius: 2px;
-      line-height: 48px;
+      line-height: 45px;
       background-color: $color-orange;
       color: $color-white;
       transition: background-color 0.5s;
-      i {
+      span {
          margin-right: 6px;
       }
       &:hover {
@@ -1555,7 +1553,7 @@ main {
          width: 100%;
       }
    }
-} //@media for*/
+} //@media for BUY OXXO NOW
 
 //----------------- CLIENTS SAY -----------------
 #clients-say {
@@ -1860,6 +1858,7 @@ main {
       .right-control-slider {
          width: 30px;
          height: 30px;
+         margin: 21px 0px;
       }
       li {
          width: 129px;
@@ -1875,7 +1874,7 @@ main {
 //----------------- RESPONSIVE -----------------
 #responsive {
    color: $color-grey;
-   margin-bottom: 200px;
+   margin-bottom: 150px;
    section {
       float: left;
    }
@@ -1902,7 +1901,7 @@ main {
          margin: 11px 0 53px;
          line-height: 20px;
       }
-      .fas {
+      span {
          position: absolute;
          width: 70px;
          height: 70px;
@@ -1921,6 +1920,7 @@ main {
 //-------@media for RESPONSIVE---------
 @media (max-width: 1320px) {
    #responsive {
+      margin-bottom: 100px;
       .under-h3 {
          width: 60%;
       }
@@ -1956,6 +1956,7 @@ main {
 
 @media (max-width: 992px) {
    #responsive {
+      margin-bottom: 50px;
       .under-h3 {
          width: 70%;
          margin: 16px auto 50px;
@@ -1998,6 +1999,7 @@ main {
 
 @media (max-width: 500px) {
    #responsive {
+      margin-bottom: 30px;
       .under-h3 {
          width: 100%;
          margin: 14px auto 30px;
@@ -2021,6 +2023,519 @@ main {
       }
    }
 } //@media for RESPONSIVE
+
+//----------------- CONTACT -----------------
+#contact {
+   background-color: #303030;
+   color: $color-white;
+   padding: 54px 0 82px;
+   font-size: 14px;
+   section {
+      width: 23%;
+      float: left;
+      line-height: 20px;
+      h4 {
+         font-size: 20px;
+         margin-bottom: 23px;
+         font-weight: normal;
+         span {
+            font-size: 24px;
+            padding-right: 13px;
+         }
+      }
+   }
+   section:not(.contact-form) {
+      margin-right: 30px;
+   }
+   .contact-info {
+      font-weight: 300;
+      dt {
+         margin-top: 20px;
+      }
+      dd {
+         color: #ACABAB;
+      }
+      dd.two-lines {
+         display: none;
+      }
+      .social-contacts {
+         margin-top: 17px;
+         a {
+            display: block;
+            border: 1px solid $color-white;
+            border-radius: 39px;
+            width: 39px;
+            height: 39px;
+            line-height: 39px;
+            text-align: center;
+            color: $color-white;
+            i {
+               font-family: fontawesome !important;
+            }
+         }
+         li {
+            float: left;
+         }
+         li:not(:last-child) {
+            padding-right: 14px;
+         }
+      }
+      
+   }
+   .latest-posts {
+      .post {
+         margin-bottom: 20px;
+         p {
+            font-size: 13px;
+            color: #ACABAB;
+            margin: 2px 0;
+            font-weight: 300;
+         }
+         img {
+            float: left;
+            margin: 4px 15px 25px 0;
+         }
+         .date-author {
+            color: $color-orange;
+         }
+      }
+   }
+   .our-services {
+      li {
+         border-bottom: 1px solid #DBDBDB;
+         font-size: 14px;
+         padding: 11px 0 10px;
+         p {
+            font-size: 13px;
+            color: #ACABAB;
+            margin: 7px 0 8px;
+            font-weight: 300;
+            line-height: 18px;
+            display: none;
+         }
+         &:first-child {
+            padding-top: 0;
+         }
+         .btn-toggle {
+            cursor: pointer;
+            background-color: $color-orange;
+            border: none;
+            border-radius: 16px;
+            color: $color-white;
+            width: 16px;
+            height: 16px;
+            text-align: center;
+            line-height: 16px;
+            padding: 0;
+            float: right;
+         }
+      }
+   }
+   .contact-form {
+      .form-data {
+         border: 1px solid #DBDBDB;
+         background-color: #F7F7F7;
+         padding: 9px 34px 8px 4px;
+         width: 229px;
+         border-radius: 2px;
+         margin-bottom: 15px;
+         color: $color-grey;
+         &::-webkit-input-placeholder {
+            color: #ACABAB;
+            font-weight: 300;
+            font-size: 14px;
+         }
+         &::-moz-placeholder {
+            color: #ACABAB;
+            font-weight: 300;
+            font-size: 14px;
+         }
+         &:focus {
+            font-family: $font-family-Open;
+            color: $color-dark-grey;
+            background-color: #fff;
+         }
+      }
+      .form-message {
+         width: 229px;
+         height: 102px;
+         resize: none;
+      }
+      .form-btn-submit {
+         float: right;
+         border: 1px solid #B75200;
+         border-radius: 2px;
+         background-color: $color-orange;
+         color: $color-white;
+         font-weight: 300;
+         font-size: 14px;
+         padding: 9px 18px 8px 43px;
+      }
+      form {
+         span {
+            font-size: 16px;
+            color: #ACABAB;
+            position: absolute;
+            z-index: 100;
+            right: 13px;
+            top: 10px;
+            >.far-btn {
+               color: #f0f0f0;
+               margin-right: 63px;
+               vertical-align: 50%;
+            }
+         }
+         p {
+            position: relative;
+         }
+      }
+   }
+}
+
+//-------@media for CONTACT---------
+@media (max-width: 1320px) {
+   #contact {
+      padding: 54px 0 62px;
+      section {
+         width: 23.3%;
+         line-height: 18px;
+      }
+      section:not(.contact-form) {
+         margin-right: 24px;
+      }
+      .contact-info .social-contacts li:not(:last-child) {
+         padding-right: 10px;
+      }
+      .contact-form {
+         .form-data {
+            width: 214px;
+         }  
+         .form-message {
+            width: 214px;
+         }
+      }
+   }
+}
+
+@media (max-width: 1200px) {
+   #contact {
+      padding: 54px 0;
+      section {
+         width: 23.4%;
+         line-height: 15px;
+      }
+      section:not(.contact-form) {
+         margin-right: 20px;
+      }
+      .contact-info {
+         dd:not(.two-lines) {
+            display: none;
+         }
+         dd.two-lines {
+            display: block;
+         }
+         .social-contacts {
+            a {
+               border-radius: 35px;
+               width: 35px;
+               height: 35px;
+               line-height: 35px;
+            }
+            li:not(:last-child) {
+               padding-right: 7px;
+            }
+         }
+      }
+      .contact-form {
+         .form-data {
+            width: 180px;
+         }  
+         .form-message {
+            width: 180px;
+         }
+      }
+   }
+}
+
+@media (max-width: 992px) {
+   #contact {
+      section {
+         width: 46%;
+      }
+      section:not(.contact-form) {
+         margin: 0 40px 30px 10px;
+      }
+      section:nth-child(2) {
+         margin-right: 0;
+         margin-left: 0;
+      }
+      .contact-info {
+         dd:not(.two-lines) {
+            display: block;
+         }
+         dd.two-lines {
+            display: none;
+         }
+         .social-contacts {
+            a {
+               border-radius: 39px;
+               width: 39px;
+               height: 39px;
+               line-height: 39px;
+            }
+            li:not(:last-child) {
+               padding-right: 10px;
+            }
+         }
+      }
+      .contact-form {
+         .form-data {
+            width: 288px;
+         }  
+         .form-message {
+            width: 288px;
+         }
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   #contact {
+      padding: 40px 0;
+      section {
+         width: 47.8%;
+      }
+      section:not(.contact-form) {
+         margin: 0 20px 20px 0;
+      }
+      section:nth-child(2) {
+         margin-right: 0;
+         margin-left: 0;
+      }
+      .contact-info {
+         dt {
+            margin-top: 14px;
+         }
+         dd:not(.two-lines) {
+            display: none;
+         }
+         dd.two-lines {
+            display: block;
+         }
+         .social-contacts {
+            a {
+               border-radius: 35px;
+               width: 35px;
+               height: 35px;
+               line-height: 35px;
+            }
+            li:not(:last-child) {
+               padding-right: 7px;
+            }
+         }
+      }
+      .latest-posts {
+         .post {
+            margin-bottom: 14px;
+            img {
+               margin: 4px 10px 16px 0;
+            }
+         }
+      }
+      .contact-form {
+         .form-data {
+            width: 86%;
+         }  
+         .form-message {
+            width: 86%;
+         }
+      }
+   }
+}
+
+@media (max-width: 500px) {
+   #contact {
+      padding: 30px 0 0;
+      section {
+         width: 95.5%;
+         margin: 0 10px 15px 10px;
+         h4 {
+            margin-bottom: 15px;
+         }
+      }
+      section:not(.contact-form) {
+         margin: 0 10px 30px 10px;
+      }
+      section:nth-child(2) {
+         margin: 0 10px 20px 10px;
+      }
+      .contact-info {
+         dd:not(.two-lines) {
+            display: block;
+         }
+         dd.two-lines {
+            display: none;
+         }
+         .social-contacts {
+            a {
+               border-radius: 39px;
+               width: 39px;
+               height: 39px;
+               line-height: 39px;
+            }
+            li:not(:last-child) {
+               padding-right: 10px;
+            }
+         }
+      }
+      .latest-posts .post {
+         img {
+            margin: 4px 10px 5px 0;
+         }
+         .date-author:not(:last-child) {
+            margin-bottom: 18px;
+         }
+      }
+      .contact-form {
+         .form-data {
+            width: 90%;
+         }  
+         .form-message {
+            width: 90%;
+         }
+      }
+   }
+} //@media for CONTACT
+
+//----------------- FOOTER -----------------
+footer {
+   background-color: #202020;
+   .logo {
+      float: left;
+      text-align: center;
+      color: #F7F7F7;
+      margin: 0 30px 20px 10px;
+      cursor: pointer;
+      h1 {
+         font-family: $font-family-Source;
+         font-size: 39px;
+         margin: 0;
+         text-transform: lowercase;
+         line-height: 34px;
+         span {
+            color: $color-orange;
+         }
+      }
+      h2 {
+         font-family: $font-family-Source;
+         font-size: 10px;
+      }
+   }
+   .copyright {
+      float: left;
+      color: #fff;
+      font-size: 14px;
+      line-height: 63px;
+      font-weight: 300;
+   }
+   .bar-toggle {
+      display: none;
+   }
+   .btn-close {
+      display: none;
+   }
+   nav {
+      float: right;
+      li {
+         float: left;
+         margin-left: 26px;
+         a {
+            color: #ACABAB;
+            font-size: 14px;
+            line-height: 63px;
+            text-decoration: none;
+            font-weight: 300;
+         }
+      }
+   }
+}
+
+//-------@media for FOOTER---------
+@media (max-width: 992px) {
+   footer {
+      position: relative;
+      .copyright {
+         float: none;
+         padding-top: 44px;
+         text-align: center;
+         line-height: 32px;
+         padding-bottom: 12px;
+      }
+      .logo {
+         margin: 0 10px;
+         float: right;
+      }
+      nav {
+         float: left;
+         ul {
+            position: absolute;
+            bottom: 0;
+            width: 250px;
+            left: -250px;
+            background-color: #202020;
+            z-index: 100;
+            float: none;
+   
+            >li {
+               float: none;
+               padding: 0;
+               margin-left: 15px;
+   
+               >a {
+                  font-size: 13px;
+                  padding: 16px 14px;
+               }
+            }
+            li a {
+               line-height: 40px;
+            }
+         }
+      }
+      .btn-close {
+         display: block;
+         position: absolute;
+         top: -69px;
+         left: -32px;
+         z-index: 101;
+         cursor: pointer;
+         background: none;
+         border: none;
+         color: $color-white;
+         font-size: 24px;
+      }
+
+      .bar-toggle {
+         display: block;
+         color: $color-white;
+         font-size: 30px;
+         border: none;
+         background: none;
+         padding: 10px 5px 0;
+         cursor: pointer;
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   footer {
+      .copyright {
+         font-size: 13px;
+         padding-top: 50px;
+         padding-bottom: 10px;
+      }
+   }
+}//@media for FOOTER
+
 
 /*
 -------@media for ---------
