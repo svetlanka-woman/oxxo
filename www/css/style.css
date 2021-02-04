@@ -85,6 +85,8 @@ header {
       font-family: "Open Sans", "sans-serif";
       font-weight: 600;
       font-size: 20px; }
+    #main-slider .slider-caption .mob {
+      display: none; }
     #main-slider .slider-caption #btn-more {
       font-size: 14px;
       font-family: "Open Sans", "sans-serif";
@@ -407,32 +409,51 @@ header {
     right: 5px; }
   #main-slider .left-control-slider {
     left: 5px; } }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .menu .bar-toggle {
     font-size: 28px;
     padding: 7px; }
   .menu .logo {
-    height: 44px; }
-    .menu .logo h1 {
-      font-size: 40px;
-      line-height: 25px; }
+    display: none; }
 
   #main-slider .slider-caption {
     top: 96px; }
-    #main-slider .slider-caption h2 {
-      font-size: 38px; }
-    #main-slider .slider-caption ul {
-      margin: 2px 0 15px; }
-    #main-slider .slider-caption li {
-      font-size: 12px; }
-    #main-slider .slider-caption #btn-more {
-      font-size: 12px;
-      padding: 4px 7px; }
+    #main-slider .slider-caption h2, #main-slider .slider-caption ul, #main-slider .slider-caption #btn-more {
+      display: none; }
+    #main-slider .slider-caption h1.mob {
+      display: block;
+      font-size: 96px;
+      color: white;
+      margin: 20px auto; }
+    #main-slider .slider-caption h2.mob {
+      display: block;
+      font-size: 26px;
+      margin: 0; }
   #main-slider .left-control-slider,
   #main-slider .right-control-slider {
-    top: 100px;
-    width: 20px;
-    height: 52px; } }
+    display: none; } }
+@media (max-width: 650px) and (max-width: 550px) {
+  #main-slider .slider-caption h1.mob {
+    display: block;
+    font-size: 80px;
+    color: white;
+    margin: 0px auto 10px; }
+  #main-slider .slider-caption h2.mob {
+    display: block;
+    font-size: 22px;
+    margin: 0; } }
+@media (max-width: 650px) and (max-width: 450px) {
+  #main-slider .slider-caption {
+    top: 80px; }
+    #main-slider .slider-caption h1.mob {
+      display: block;
+      font-size: 70px;
+      color: white;
+      margin: 0px auto; }
+    #main-slider .slider-caption h2.mob {
+      display: block;
+      font-size: 19px;
+      margin: 0; } }
 main h3 {
   font-size: 36px;
   font-weight: bold;

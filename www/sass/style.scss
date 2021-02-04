@@ -145,6 +145,10 @@ header {
          font-size: 20px;
       }
 
+      .mob {
+         display: none;
+      }
+
       #btn-more {
          font-size: 14px;
          font-family: $font-family-Open;
@@ -642,7 +646,7 @@ header {
    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
    .menu {
       .bar-toggle {
          font-size: 28px;
@@ -650,12 +654,7 @@ header {
       }
 
       .logo {
-         height: 44px;
-
-         h1 {
-            font-size: 40px;
-            line-height: 25px;
-         }
+         display: none;
       }
    }
 
@@ -663,31 +662,68 @@ header {
       .slider-caption {
          top: 96px;
 
-         h2 {
-            font-size: 38px;
+         h2, ul, #btn-more {
+            display: none;
          }
-
-         ul {
-            margin: 2px 0 15px;
+         h1.mob {
+            display: block;
+            font-size: 96px;
+            color: white;
+            margin: 20px auto;
          }
-
-         li {
-            font-size: 12px;
-         }
-
-         #btn-more {
-            font-size: 12px;
-            padding: 4px 7px;
+         h2.mob {
+            display: block;
+            font-size: 26px;
+            margin: 0;
          }
       }
 
       .left-control-slider,
       .right-control-slider {
-         top: 100px;
-         width: 20px;
-         height: 52px;
+         display: none;
       }
    }
+
+   @media (max-width: 550px) {
+      #main-slider {
+         .slider-caption {
+
+            h1.mob {
+               display: block;
+               font-size: 80px;
+               color: white;
+               margin: 0px auto 10px;
+            }
+
+            h2.mob {
+               display: block;
+               font-size: 22px;
+               margin: 0;
+            }
+         }
+      }
+   }
+   @media (max-width: 450px) {
+      #main-slider {
+         .slider-caption {
+            top: 80px;
+
+            h1.mob {
+               display: block;
+               font-size: 70px;
+               color: white;
+               margin: 0px auto;
+            }
+
+            h2.mob {
+               display: block;
+               font-size: 19px;
+               margin: 0;
+            }
+         }
+      }
+   }
+
 } //@media for HEADER  
 
 
